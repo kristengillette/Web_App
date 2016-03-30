@@ -42,6 +42,10 @@ header {
 	display: inline-block;
 }
 
+#alert {
+	margin-bottom: -10px;
+}
+
 /* ---- Navigation ---- */
 
 .main-header {
@@ -70,9 +74,8 @@ header {
 	height:1px;
 	overflow:hidden;
 }
-.nav a {
-	text-align: left;
-	padding: .4em;
+.nav li {
+	padding: 30px;
 }
 
 
