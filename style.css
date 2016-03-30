@@ -58,17 +58,23 @@ header {
 .nav {
 	flex-direction: column;
 	justify-content: space-between;
+	background-color: #4d4c72;
+	list-style: none;
 }
 
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
 .nav a {
 	text-align: left;
 	padding: .4em;
 }
 
-nav {
-	background-color: #4d4c72;
-	list-style: none;
-}
 
 img {
 	width: 30px;
