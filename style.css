@@ -1,0 +1,89 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/* ---- Font Styles ---- */
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto;
+	line-height: 1;
+}
+
+.title{
+	font-size: 22px;
+	color: #fff;
+	padding: 25px 10px;
+}
+
+.name {
+	font-size: 15px;
+	color: #fff;
+	padding: 28px 10px;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Header ---- */
+header {
+	background-color: #7477bf;
+}
+
+.title, .name {
+	margin: 0;
+	display: inline-block;
+}
+
+/* ---- Navigation ---- */
+
+.main-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav a {
+	display: block;
+	text-align: left;
+	padding: .4em;
+}
+
+nav {
+	background-color: #4d4c72;
+	list-style: none;
+}
+
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+img {
+	width: 30px;
+	height: 30px;
+}
+
+/* ---- Layout Containers ---- */
+
+/* ================================= 
+Media Queries
+==================================== */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
