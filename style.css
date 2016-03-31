@@ -17,14 +17,14 @@ body {
 	font-weight: 300;
 }
 
-.title{
-	font-size: 22px;
+.title {
+	font-size: 15px;
 	color: #fff;
 	padding: 25px 10px;
 }
 
 .name {
-	font-size: 15px;
+	font-size: 12px;
 	color: #fff;
 	padding: 28px 10px;
 }
@@ -43,22 +43,42 @@ header {
 	background-color: #7477bf;
 }
 
-.title, .name {
-	margin: 0;
-	display: inline-block;
-}
-
-#alert {
-	margin-bottom: -10px;
-}
-
-/* ---- Navigation ---- */
-
 .main-header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.name-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.name {
+	display: none;
+}
+
+#alert-dot {
+	height: 8px;
+	width: 8px;
+	position: relative;
+	top: -16px;
+	right: 5px;
+}
+.profile-photo {
+    border-radius: 50%;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+#alert, #line {
+	align-self: center;
+}
+/* ---- Navigation ---- */
+
 
 .flex {
 	display: flex;
@@ -80,29 +100,58 @@ header {
 	height:1px;
 	overflow:hidden;
 }
-.nav li {
-	padding: 30px;
-}
-
 
 img {
 	width: 30px;
 	height: 30px;
 }
 
+.nav li {
+	padding: 10px;
+}
+
+
+nav img {
+	width: 20px;
+	height: 20px;
+}
+
+
 /* ---- Layout Containers ---- */
 
-/*top section*/
+/*pop-up alerts*/
 
-.top-section, .dashboard-title, .search {
+.alert,
+.new-alert {
+	background-color: #7377bf;
+	color: white;
+	display: block;
+	margin: 15px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+.exit, .new-exit {
+	cursor: pointer;
+	font-weight: 700;
+	float: right;
+}
+
+.highlight {
+	font-weight: 700;
+}
+
+/*top section*/
+.search {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 }
 
 .dashboard-title {
-	align-self: center;
-	padding: 0 30px;
+	text-align: center;
+	margin: 25px;
 }
 
 .search {
@@ -110,7 +159,6 @@ img {
 	border-bottom: 1px solid #dfdfdf;
 	border-left: 1px solid #dfdfdf;
 	background: #fbfbfb;
-
 }
 
 input {
@@ -120,7 +168,7 @@ input {
 	margin: 12px 50px;
 	align-self: flex-end;
 	border: 2px solid #dfdfdf;
-	width: 33%;
+	width: 90%;
 }
 
 .fa {
@@ -137,13 +185,9 @@ input {
 	flex-flow: row wrap;
 }
 
-.traffic, .daily-traffic, .mobile-traffic {
+.traffic, .daily-traffic, .mobile-traffic, .alert, .new-alert, .search, .dashboard {
 	flex: 1 100%;
 }
-
-
-
-
 
 
 /* ================================= 
@@ -151,12 +195,81 @@ Media Queries
 ==================================== */
 @media (min-width: 768px) {
 
+/* ---- Navigation ---- */
+.nav li {
+	padding: 30px;
+}  
+
+nav img {
+	width: 30px;
+	height: 30px;
+}
+
+/*Header*/
+
+.title{
+	font-size: 22px;
+	color: #fff;
+	padding: 25px 10px;
+}
+
+.name {
+	font-size: 15px;
+	color: #fff;
+	padding: 28px 10px;
+}
+
+.title, .name {
+	margin: 0;
+	display: inline-block;
+}
+
+#alert, .profile-photo {
+	width: 30px;
+	height: 30px;
+}
+
+/* ---- Top Containers ---- */
+.top-section, .dashboard-title, .search {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.search {
+	flex-grow: 2;
+	border-bottom: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	background: #fbfbfb;
+}
+
+input {
+	font-size: 12px;
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 12px 50px;
+	align-self: flex-end;
+	border: 2px solid #dfdfdf;
+	width: 33%;
+}
+
+/*Pop-up Alerts*/
+.alert,
+.new-alert {
+	margin: 25px;
+	padding: 15px;
+	font-size: 15px;
+}
+
+/* ---- Layout Containers ---- */
+.daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
+  	flex: 1 50%; 
+  }
+
 }
 
 @media (min-width: 1024px) {
   /* We tell both sidebars to share a row */
-  .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity {
-  	flex: 1 50%; 
-  }
+  
 
 }
