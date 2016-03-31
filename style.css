@@ -1,6 +1,7 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 * {
 	box-sizing: border-box;
@@ -13,6 +14,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0 auto;
 	line-height: 1;
+	font-weight: 300;
 }
 
 .title{
@@ -25,6 +27,10 @@ body {
 	font-size: 15px;
 	color: #fff;
 	padding: 28px 10px;
+}
+
+.dashboard-title {
+	font-size: 20px;
 }
 
 
@@ -86,6 +92,60 @@ img {
 
 /* ---- Layout Containers ---- */
 
+/*top section*/
+
+.top-section, .dashboard-title, .search {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.dashboard-title {
+	align-self: center;
+	padding: 0 30px;
+}
+
+.search {
+	flex-grow: 2;
+	border-bottom: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	background: #fbfbfb;
+
+}
+
+input {
+	font-size: 12px;
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 12px 50px;
+	align-self: flex-end;
+	border: 2px solid #dfdfdf;
+	width: 33%;
+}
+
+.fa {
+	position: relative;
+	align-self: center;
+	right: 73px;
+	opacity: .5;
+}
+
+/*traffic middle section*/
+
+.main-content {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.traffic, .daily-traffic, .mobile-traffic {
+	flex: 1 100%;
+}
+
+
+
+
+
+
 /* ================================= 
 Media Queries
 ==================================== */
@@ -94,5 +154,9 @@ Media Queries
 }
 
 @media (min-width: 1024px) {
+  /* We tell both sidebars to share a row */
+  .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity {
+  	flex: 1 50%; 
+  }
 
 }
