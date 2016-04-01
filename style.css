@@ -20,17 +20,21 @@ body {
 .title {
 	font-size: 15px;
 	color: #fff;
-	padding: 25px 10px;
 }
 
 .name {
 	font-size: 12px;
 	color: #fff;
-	padding: 28px 10px;
 }
 
 .dashboard-title {
 	font-size: 20px;
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 
@@ -42,6 +46,11 @@ body {
 header {
 	background-color: #7477bf;
 }
+
+.title{
+	padding: 12px 10px;
+}
+
 
 .main-header {
 	display: flex;
@@ -76,6 +85,10 @@ header {
 
 #alert, #line {
 	align-self: center;
+}
+
+#alert {
+	cursor: pointer;
 }
 /* ---- Navigation ---- */
 
@@ -189,6 +202,47 @@ input {
 	flex: 1 100%;
 }
 
+/*traffic*/
+
+canvas {
+	width: 100% !important;
+	height: auto !important;
+	  max-height: 275px;
+}
+
+.traffic-nav-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.traffic-nav {
+	align-self: center;
+}
+.traffic-nav li {
+	display: inline-block;
+	flex-direction: row-reverse;
+	margin: 10px 5px;
+}
+
+.traffic-nav li a{
+	text-decoration: none;
+	color: #b6b6b6;
+	padding: 5px 10px;
+}
+
+#selected {
+	color: #fff;
+	background-color: #81c98f;
+	border-radius: 45%;
+
+}
+.traffic, .daily-traffic, .mobile-traffic {
+  width: 80%;
+  margin: 0px auto 10px;
+  padding: 0 20px;
+}
+
 
 /* ================================= 
 Media Queries
@@ -208,14 +262,10 @@ nav img {
 /*Header*/
 
 .title{
-	font-size: 22px;
-	color: #fff;
 	padding: 25px 10px;
 }
 
 .name {
-	font-size: 15px;
-	color: #fff;
 	padding: 28px 10px;
 }
 
@@ -256,20 +306,16 @@ input {
 /*Pop-up Alerts*/
 .alert,
 .new-alert {
-	margin: 25px;
-	padding: 15px;
 	font-size: 15px;
 }
 
 /* ---- Layout Containers ---- */
 .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
-  	flex: 1 50%; 
+  	flex: 1 49%; 
   }
 
 }
 
 @media (min-width: 1024px) {
   /* We tell both sidebars to share a row */
-  
-
 }
