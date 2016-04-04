@@ -41,22 +41,27 @@
 			<div class="traffic-nav-flex">
 		  		<h3>Traffic</h3>
 		  		<nav class="traffic-nav">
-			<li><a href="#">Hourly</a></li>
-        	<li><a href="#">Daily</a></li>
-        	<li><a href="#" id="selected">Weekly</a></li>
-        	<li><a href="#">Monthly</a></li>
+			<li><a href="#" class="hourly">Hourly</a></li>
+        	<li><a href="#" class="daily">Daily</a></li>
+        	<li><a href="#" id="selected" class="weekly">Weekly</a></li>
+        	<li><a href="#" class="monthly">Monthly</a></li>
 
 		</nav>
 		</div>
-					    <canvas id="canvas"></canvas>
+		<div class="canvas">
+					    <canvas id="traffic"></canvas>
+					    </div><!--end canvas div-->
 		</div> <!--end traffic-->
 	<div class="daily-traffic">
 		<h3>Daily Traffic</h3>
-					    <canvas id="test1"></canvas>
+					    <canvas id="daily-traffic"></canvas>
 	</div> <!--end daily-traffic-->
 	<div class="mobile-traffic">
 		<h3>Mobile Traffic</h3>
-					    <canvas id="test2"></canvas>
+						<div class="flex-mobile-box">
+					    <canvas id="mobile-traffic"></canvas>
+					    <div id="legend"></div>
+					    </div>
 	</div> <!--end mobile-traffic-->
 	<div class="Social">
 		<h3>Social</h3>
