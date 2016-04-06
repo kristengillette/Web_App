@@ -129,9 +129,20 @@ nav img {
 	height: 20px;
 }
 
-#menu-page-selected {
-	border-left: solid 3px #85db80;
+li#menu-page-selected:after {
+	content: " ";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: -101%;
+	border-right: solid 3px #85db80;
 	border-radius: 5%;
+}
+
+nav ul {
+	overflow: hidden;
 }
 /* ---- Layout Containers ---- */
 
@@ -177,7 +188,7 @@ nav img {
 	background: #fbfbfb;
 }
 
-input {
+#search-input {
 	font-size: 12px;
 	padding: 12px 2px;
 	border-radius: 5px;
@@ -354,7 +365,7 @@ h4 {
 /*New Members*/
 
 .new-members, .recent-activity {
-  margin: 0px auto 10px;
+  margin: 0px auto;
   padding: 10px 20px;
   border-bottom: solid 1px #d2d2d2;
   font-size: 13px;
@@ -402,6 +413,46 @@ h4 {
 	justify-content: space-between;
 }
 
+/*Message Users*/
+
+.message-user {
+  margin: 0px auto;
+  padding: 10px 20px;
+  font-size: 13px;
+}
+.user-search {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#search_user, .user-message {
+	font-size: 12px;
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 12px auto;
+	border: 2px solid #d1d1d1;
+	width: 90%;
+	background-color: #fbfbfb;
+	color: #d1d1d1;
+}
+
+.user-message {
+	min-height: 100px;
+}
+
+#send {
+	display: block;
+	font-size: 12px;
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 12px auto;
+	width: 90%;
+	background-color: #7377bf;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+
+}
 /* ================================= 
 Media Queries
 ==================================== */
@@ -491,7 +542,7 @@ input {
 
 /*members*/
 
-.new-members {
+.new-members, .message-user {
 	border-right: solid 1px #d2d2d2;
 }
 
