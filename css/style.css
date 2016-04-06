@@ -131,6 +131,7 @@ nav img {
 
 #menu-page-selected {
 	border-right: solid 3px #85db80;
+	border-radius: 5%;
 }
 /* ---- Layout Containers ---- */
 
