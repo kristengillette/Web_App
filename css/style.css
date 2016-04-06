@@ -121,6 +121,7 @@ img {
 
 .nav li {
 	padding: 10px;
+	position: relative;
 }
 
 
