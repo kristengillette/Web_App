@@ -129,7 +129,9 @@ nav img {
 	height: 20px;
 }
 
-
+#menu-page-selected {
+	border-right: solid 3px #85db80;
+}
 /* ---- Layout Containers ---- */
 
 /*pop-up alerts*/
