@@ -4,10 +4,11 @@ $(".nav li").click(function(){
 })
 
 $("form").submit(function(){
-    if (!$(".user-message").val()) {
+ if (!$(".user-message").val()) {
     $("#warning").text("Please enter a message").show();
-} else {
-	$("#warning").empty()
+}
+
+else {
 	$("#warning").text("Thanks for sending your message!");
 }
 });

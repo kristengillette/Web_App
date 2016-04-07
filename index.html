@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href='https://fonts.googleapis.com/css?family=Open Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
 	
@@ -126,21 +125,17 @@
 		</div>
 	<div class="new-members">
 		<h3>New Members</h3>
-		<div class="flex-list">
 		<div class="member-list"><div class="member-float"><img src="images/1.jpg"><p>Victoria Chambers<a href="mail-to:victoriachambers@gmail.com">victoriachambers@gmail.com</a></p></div><p>10/15/2015</p></div>
 		<div class="member-list"><div class="member-float"><img src="images/2.jpg"><p>Dale Byrd<a href="DaleByrd@gmail.com">DaleByrd@gmail.com</a></p></div><p>10/15/2015</p></div>
 		<div class="member-list"><div class="member-float"><img src="images/3.jpg"><p>Dawn Wood<a href="dawnwood@gmail.com">dawnwood@gmail.com</a></p></div><p>10/15/2015</p></div>
 		<div class="member-list"><div class="member-float"><img src="images/4.jpg"><p>Dan Oliver<a href="DanOliver@gmail.com">Dan Oliver@gmail.com</a></p></div><p>10/15/2015</p></div>
-		</div>
 	</div> <!--end new-members-->
 	<div class="recent-activity">
 		<h3>Recent Activity</h3>
-		<div class="flex-list">
 		<div class="member-list"><div class="member-float"><img src="images/1.jpg"><p>Victoria Chambers commented on YourApp's SEO tips<span class="when">1 day ago</span></p></div><p>></p></div>
 		<div class="member-list"><div class="member-float"><img src="images/2.jpg"><p>Dale Byrd liked the post Facebook changes for 2016<span class="when">1 day ago</span></p></div><p>></p></div>
 		<div class="member-list"><div class="member-float"><img src="images/3.jpg"><p>Dawn Wood commented on Facebok changes for 2016<span class="when">1 day ago</span></p></div><p>></p></div>
 		<div class="member-list"><div class="member-float"><img src="images/4.jpg"><p>Dan Oliver posted YourApp's SEO tips<span class="when">1 day ago</span></p></div><p>></p></div>
-		</div>
 	</div> <!--end activity-->
 	<div class="message-user">
 		<h3>Message User</h3>
@@ -153,11 +148,38 @@
 	</div> <!--end user-->
 	<div class="settings">
 		<h3>Settings</h3>
-		<p>Cupcake ipsum dolor sit amet croissant soufflé. I love candy cupcake. Cookie pastry soufflé. Wafer apple pie danish cupcake icing croissant. Sweet roll I love liquorice chocolate cake I love marzipan cake marzipan icing. Sugar plum dessert marzipan. Gummies croissant jelly lollipop powder cheesecake gummies. Tiramisu halvah chocolate bar I love cotton candy I love fruitcake. Soufflé sweet pie gummies candy powder pastry. I love sugar plum topping fruitcake pastry. Ice cream caramels danish brownie tart I love cookie. I love I love sugar plum. Chupa chups chocolate topping marzipan donut. I love apple pie wafer jelly-o donut caramels gingerbread I love I love.</p>
+		<form id="#settings">
+
+	<div class="inner-settings">	
+	
+	<p class="settings-text">Send Email Notifcations</p>
+	<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffemail" checked>
+    <label class="onoffswitch-label" for="onoffemail">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+        <button id="send" type="submit">Send</button> 
+        <button id="send" type="submit">Send</button>
+    </label>
+</div>
+</div>
+
+<div class="inner-settings">
+<p class="settings-text">Set Profile to Public</p>
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffprofile" checked>
+    <label class="onoffswitch-label" for="onoffprofile">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+</div>
+		</form>
 	</div> <!--end settings-->
 	</div> <!--end main content-->
 	</div>
 		</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="js/Chart.min.js"></script>
 	<script src="js/alert.js"></script>
 	<script src="js/chart.js"></script>
