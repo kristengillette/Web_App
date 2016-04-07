@@ -46,4 +46,7 @@ $("#save").click( function() {
 
 });
 
+$("#cancel").click( function() {
+	localStorage.timezone.clear();
+})
 loadSettings();
