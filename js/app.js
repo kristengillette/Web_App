@@ -41,6 +41,9 @@ function saveSettings() {
 
 $("#save").click( function() { 
 	saveSettings();
+	console.log("message saved");
+	console.log(localStorage.timezone);
+
 });
 
 loadSettings();
