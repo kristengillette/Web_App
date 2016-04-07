@@ -1,3 +1,18 @@
+var hourlyLineData = {
+            labels : ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"],
+            datasets : [
+                {
+                    fillColor : "#e2e3f6",
+                    strokeColor : "#7377bf",
+                    pointColor : "#fff",
+                    pointStrokeColor : "#7377bf",
+                    pointHighlightFill : "#7377bf",
+                    pointHighlightStroke : "#fff",
+                    data : [7,10,17,12,22,20,10,7,10,17,12,22,7,10,17,12,22,20,10,7,10,17,12,22]
+                }
+            ]
+        }
+
 var dailyLineData = {
             labels : ["S", "M", "T", "W", "T", "F", "S"],
             datasets : [
@@ -28,6 +43,20 @@ var weeklyLineData = {
             ]
         }
 
+var monthlyLineData = {
+            labels : ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"],
+            datasets : [
+                {
+                    fillColor : "#e2e3f6",
+                    strokeColor : "#7377bf",
+                    pointColor : "#fff",
+                    pointStrokeColor : "#7377bf",
+                    pointHighlightFill : "#7377bf",
+                    pointHighlightStroke : "#fff",
+                    data : [7500,10000,17500,12500,22500,20000,10000,7500,10000,17500,12500,22500]
+                }
+            ]
+        }
 var dailyBarData = {
             labels : ["S", "M", "T", "W", "T", "F", "S"],
             datasets : [
@@ -35,6 +64,12 @@ var dailyBarData = {
                     fillColor : "#7377bf",
                     strokeColor : "#7377bf",
                     data : [75,100,175,125,225,200,100]
+                },
+
+                {
+                    fillColor : "#81c98f",
+                    strokeColor : "#81c98f",
+                    data : [100,65,75,25,89,55,90]
                 }
             ]
         }
@@ -54,6 +89,12 @@ var mobileChartData = [
         value: 100,
         color: "#74b1bf",
         label: "Phones"
+    },
+
+    {
+        value: 100,
+        color: "#454994",
+        label: "Netbooks"
     }
 ];
       
@@ -125,4 +166,34 @@ $(".daily").click(function(){
 });
 })
 
+
+$(".monthly").click(function(){
+    $(".canvas").empty();
+    $(".canvas").html('<canvas id="traffic"><canvas>');
+        var monthlyLine = document.getElementById("traffic").getContext("2d");
+        window.myLine = new Chart(monthlyLine).Line(monthlyLineData, {
+            responsive : true,
+            bezierCurve : false,
+            scaleOverride: true,
+            scaleStepWidth: 2000,
+            scaleStartValue: 5000,
+            scaleSteps: 10,
+            maintainAspectRatio: false
+});
+})
+
+$(".hourly").click(function(){
+    $(".canvas").empty();
+    $(".canvas").html('<canvas id="traffic"><canvas>');
+        var hourlyLine = document.getElementById("traffic").getContext("2d");
+        window.myLine = new Chart(hourlyLine).Line(hourlyLineData, {
+            responsive : true,
+            bezierCurve : false,
+            scaleOverride: true,
+            scaleStepWidth: 5,
+            scaleStartValue: 0,
+            scaleSteps: 5,
+            maintainAspectRatio: false
+});
+})
 

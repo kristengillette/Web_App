@@ -189,7 +189,7 @@ nav ul {
 	background: #fbfbfb;
 }
 
-#search-input {
+#search_input {
 	font-size: 12px;
 	padding: 12px 2px;
 	border-radius: 5px;
@@ -438,25 +438,26 @@ h4 {
 	border: 2px solid #d1d1d1;
 	width: 90%;
 	background-color: #fbfbfb;
-	color: #d1d1d1;
 }
 
 .user-message {
 	min-height: 100px;
 }
 
-#send {
-	display: block;
+
+button {
 	font-size: 12px;
 	padding: 12px 2px;
 	border-radius: 5px;
 	margin: 12px auto;
-	width: 90%;
 	background-color: #7377bf;
 	color: #fff;
 	text-transform: uppercase;
 	border: none;
+}
 
+#send {
+	width: 90%;
 }
 
 /*Settings*/
@@ -521,6 +522,31 @@ h4 {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
 }
+
+
+.settings-buttons {
+	text-align: center;
+}
+
+#timezone {
+	width: 90%;
+	font-size: 12px;
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 20px auto;
+	border: 2px solid #dfdfdf;
+}
+
+
+#save, #cancel {
+	width: 45%;
+	margin-top: 30px;
+}
+
+#cancel {
+	background-color: #b2b2b2;
+}
+
 /* ================================= 
 Media Queries
 ==================================== */
@@ -570,7 +596,7 @@ nav img {
 	background: #fbfbfb;
 }
 
-input {
+#search_input {
 	font-size: 12px;
 	padding: 12px 2px;
 	border-radius: 5px;
