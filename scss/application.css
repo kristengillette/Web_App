@@ -10,37 +10,35 @@ body {
   margin: 0 auto;
 }
 
-/* ================================= 
-  Base Element Styles
-==================================== */
-/* ---- Header ---- */
-/* line 7, layout/_header.scss */
+/* line 3, layout/_header.scss */
 header {
   background-color: #7477bf;
 }
 
-/* line 11, layout/_header.scss */
+/* line 7, layout/_header.scss */
 .title {
   padding: 12px 10px;
 }
-
-/* line 16, layout/_header.scss */
-.main-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  /* line 7, layout/_header.scss */
+  .title {
+    padding: 25px 10px;
+    margin: 0;
+    display: inline-block;
+  }
 }
 
 /* line 22, layout/_header.scss */
-.name-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-/* line 28, layout/_header.scss */
 .name {
   display: none;
+}
+@media (min-width: 768px) {
+  /* line 22, layout/_header.scss */
+  .name {
+    padding: 28px 10px;
+    margin: 0;
+    display: inline-block;
+  }
 }
 
 /* line 32, layout/_header.scss */
@@ -60,49 +58,84 @@ header {
   height: 40px;
   align-self: center;
 }
+@media (min-width: 768px) {
+  /* line 39, layout/_header.scss */
+  .profile-photo {
+    width: 30px;
+    height: 30px;
+  }
+}
 
-/* line 47, layout/_header.scss */
+/* line 52, layout/_header.scss */
 #alert, #line {
   align-self: center;
 }
 
-/* line 51, layout/_header.scss */
+/* line 56, layout/_header.scss */
 #alert {
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  /* line 56, layout/_header.scss */
+  #alert {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 /*pop-up alerts*/
-/* line 58, layout/_header.scss */
-.alert,
-.new-alert {
-  background-color: #7377bf;
+/* line 67, layout/_header.scss */
+.alert {
+  background-color: #7477bf;
   display: block;
   margin: 15px;
   padding: 10px;
-  border-radius: 5px;
 }
 
-/* line 66, layout/_header.scss */
-.exit, .new-exit {
+/* line 75, layout/_header.scss */
+.exit {
   cursor: pointer;
   float: right;
 }
 
-/*top section*/
-/* line 73, layout/_header.scss */
-.search {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+@media (min-width: 768px) {
+  /* line 80, layout/_header.scss */
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
-/* line 79, layout/_header.scss */
+/* line 88, layout/_header.scss */
+.search {
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  /* line 88, layout/_header.scss */
+  .search {
+    flex-grow: 2;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    background: #fbfbfb;
+  }
+}
+
+/* line 100, layout/_header.scss */
 .dashboard-title {
   text-align: center;
   margin: 25px;
 }
+@media (min-width: 768px) {
+  /* line 100, layout/_header.scss */
+  .dashboard-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
 
-/* line 84, layout/_header.scss */
+/* line 111, layout/_header.scss */
 .search {
   flex-grow: 2;
   border-bottom: 1px solid #dfdfdf;
@@ -110,17 +143,22 @@ header {
   background: #fbfbfb;
 }
 
-/* line 91, layout/_header.scss */
+/* line 118, layout/_header.scss */
 #search_input {
   padding: 12px 2px;
-  border-radius: 5px;
   margin: 12px 50px;
   align-self: flex-end;
   border: 2px solid #dfdfdf;
   width: 90%;
 }
+@media (min-width: 768px) {
+  /* line 118, layout/_header.scss */
+  #search_input {
+    width: 33%;
+  }
+}
 
-/* line 100, layout/_header.scss */
+/* line 131, layout/_header.scss */
 .fa {
   position: relative;
   align-self: center;
@@ -129,26 +167,52 @@ header {
 }
 
 /* ---- Navigation ---- */
-/* line 109, layout/_header.scss */
-.flex {
-  display: flex;
-  flex-direction: row;
-}
-
-/* line 114, layout/_header.scss */
+/* line 144, layout/_header.scss */
 .nav {
-  flex-direction: column;
   justify-content: space-between;
   background-color: #4d4c72;
   list-style: none;
 }
-/* line 121, layout/_header.scss */
+/* line 151, layout/_header.scss */
 .nav li {
   padding: 10px;
   position: relative;
 }
+@media (min-width: 768px) {
+  /* line 151, layout/_header.scss */
+  .nav li {
+    padding: 30px;
+  }
+}
+/* line 160, layout/_header.scss */
+.nav li#menu-page-selected:after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -101%;
+  border-right: solid 3px #85db80;
+}
+/* line 172, layout/_header.scss */
+.nav img {
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 768px) {
+  /* line 172, layout/_header.scss */
+  .nav img {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* line 183, layout/_header.scss */
+.nav ul {
+  overflow: hidden;
+}
 
-/* line 128, layout/_header.scss */
+/* line 189, layout/_header.scss */
 .sr-only {
   position: absolute;
   left: -10000px;
@@ -158,103 +222,16 @@ header {
   overflow: hidden;
 }
 
-/* line 137, layout/_header.scss */
+/* line 198, layout/_header.scss */
 img {
   width: 30px;
   height: 30px;
 }
 
-/* line 144, layout/_header.scss */
-nav img {
-  width: 20px;
-  height: 20px;
-}
-
-/* line 149, layout/_header.scss */
-li#menu-page-selected:after {
-  content: " ";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: -101%;
-  border-right: solid 3px #85db80;
-  border-radius: 5%;
-}
-
-/* line 161, layout/_header.scss */
-nav ul {
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  /* ---- Navigation ---- */
-  /* line 168, layout/_header.scss */
-  .nav li {
-    padding: 30px;
-  }
-
-  /* line 172, layout/_header.scss */
-  nav img {
-    width: 30px;
-    height: 30px;
-  }
-
-  /*Header*/
-  /* line 179, layout/_header.scss */
-  .title {
-    padding: 25px 10px;
-  }
-
-  /* line 183, layout/_header.scss */
-  .name {
-    padding: 28px 10px;
-  }
-
-  /* line 187, layout/_header.scss */
-  .title, .name {
-    margin: 0;
-    display: inline-block;
-  }
-
-  /* line 192, layout/_header.scss */
-  #alert, .profile-photo {
-    width: 30px;
-    height: 30px;
-  }
-
-  /* ---- Top Containers ---- */
-  /* line 198, layout/_header.scss */
-  .top-section, .dashboard-title, .search {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  /* line 204, layout/_header.scss */
-  .search {
-    flex-grow: 2;
-    border-bottom: 1px solid #dfdfdf;
-    border-left: 1px solid #dfdfdf;
-    background: #fbfbfb;
-  }
-
-  /* line 211, layout/_header.scss */
-  #search_input {
-    padding: 12px 2px;
-    border-radius: 5px;
-    margin: 12px 50px;
-    align-self: flex-end;
-    border: 2px solid #dfdfdf;
-    width: 33%;
-  }
-}
 /*main container settings*/
 /* line 3, layout/_containers.scss */
 .main-content {
-  display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 /* line 8, layout/_containers.scss */
@@ -263,68 +240,104 @@ nav ul {
 }
 
 @media (min-width: 768px) {
-  /* ---- Layout Containers ---- */
-  /* line 17, layout/_containers.scss */
+  /* line 12, layout/_containers.scss */
   .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
     flex: 1 49%;
   }
 }
-/*traffic*/
-/* line 3, layout/_graphs.scss */
+
+/* line 1, layout/_extends.scss */
+.nav, .flex-mobile-box, .social-wrapper, .new-members, .recent-activity, .flex-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 6, layout/_extends.scss */
+.search, .flex, .main-content, .main-header, .name-group, .traffic-nav-flex, .member-list, .member-float, .social-section, .social-icon-wrapper, .inner-settings {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 11, layout/_extends.scss */
+.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float {
+  justify-content: space-between;
+}
+
+/* line 16, layout/_extends.scss */
+.alert, #search_input, .nav li#menu-page-selected:after {
+  border-radius: 5px;
+}
+
+/* line 20, layout/_extends.scss */
+.mobile-traffic, .daily-traffic, .social, .new-members, .recent-activity, .member-list:not(:last-child) {
+  border-bottom: solid 1px #dfdfdf;
+}
+
+/* line 1, layout/_graphs.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
   max-height: 275px;
 }
 
-/* line 9, layout/_graphs.scss */
-.traffic-nav-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-/* line 15, layout/_graphs.scss */
+/* line 11, layout/_graphs.scss */
 .traffic-nav {
   align-self: center;
 }
 
-/* line 18, layout/_graphs.scss */
+/* line 14, layout/_graphs.scss */
 .traffic-nav li {
   display: inline-block;
   flex-direction: row-reverse;
   margin: 10px 5px;
 }
 
-/* line 24, layout/_graphs.scss */
+/* line 20, layout/_graphs.scss */
 .traffic-nav li a {
-  text-decoration: none;
-  color: #b6b6b6;
   padding: 5px 10px;
 }
 
-/* line 30, layout/_graphs.scss */
+/* line 24, layout/_graphs.scss */
 #selected {
-  color: #fff;
   background-color: #81c98f;
   border-radius: 45%;
 }
 
-/* line 36, layout/_graphs.scss */
+/* line 29, layout/_graphs.scss */
 .traffic, .daily-traffic, .mobile-traffic {
   width: 80%;
   margin: 0px auto 10px;
   padding: 10px 20px;
 }
 
-/* line 42, layout/_graphs.scss */
+/* line 35, layout/_graphs.scss */
 .flex-mobile-box {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
+@media (min-width: 1024px) {
+  /* line 35, layout/_graphs.scss */
+  .flex-mobile-box {
+    flex-direction: row;
+  }
+}
 
-/* line 48, layout/_graphs.scss */
+/* line 45, layout/_graphs.scss */
+#legend {
+  margin-left: -100px;
+  align-self: center;
+}
+
+/* line 50, layout/_graphs.scss */
+.doughnut-legend {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+/* line 55, layout/_graphs.scss */
+.doughnut-legend li {
+  margin: 2px;
+}
+/* line 57, layout/_graphs.scss */
 .doughnut-legend li span {
   width: 1em;
   height: 1em;
@@ -333,79 +346,52 @@ canvas {
   margin-right: 1px;
 }
 
-/* line 56, layout/_graphs.scss */
-.doughnut-legend li {
-  margin: 2px;
-}
-
-/* line 60, layout/_graphs.scss */
-#legend {
-  margin-left: -100px;
-  align-self: center;
-}
-
-/* line 65, layout/_graphs.scss */
-.doughnut-legend {
-  list-style: none;
-  position: relative;
-  display: inline-block;
-}
-
-/* line 71, layout/_graphs.scss */
-.mobile-traffic, .daily-traffic {
-  border-bottom: solid 1px #d2d2d2;
+@media (min-width: 768px) {
+  /* line 67, layout/_graphs.scss */
+  .mobile-traffic, .daily-traffic {
+    border-top: solid 1px #dfdfdf;
+  }
 }
 
 @media (min-width: 768px) {
-  /* line 78, layout/_graphs.scss */
-  .mobile-traffic, .daily-traffic {
-    border-top: solid 1px #d2d2d2;
-    border-bottom: solid 1px #d2d2d2;
-  }
-
-  /* line 83, layout/_graphs.scss */
+  /* line 75, layout/_graphs.scss */
   .daily-traffic {
-    border-right: solid 1px #d2d2d2;
+    border-right: solid 1px #dfdfdf;
   }
 }
-@media (min-width: 1024px) {
-  /* line 91, layout/_graphs.scss */
-  .flex-mobile-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-}
-/*social*/
-/* line 3, layout/_social.scss */
+
+/* line 1, layout/_social.scss */
 .social-wrapper {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  /* line 1, layout/_social.scss */
+  .social-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 
-/* line 11, layout/_social.scss */
+/* line 13, layout/_social.scss */
 .social-section {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
-/* line 17, layout/_social.scss */
+/* line 18, layout/_social.scss */
 .social-text {
   align-self: center;
   margin-right: 67px;
 }
 
-/* line 21, layout/_social.scss */
+/* line 22, layout/_social.scss */
 .social {
-  border-bottom: solid 1px #d2d2d2;
   margin: 0px auto;
   padding: 10px 20px 40px;
 }
 
-/* line 28, layout/_social.scss */
+/* line 29, layout/_social.scss */
 .social-section {
   background-color: #fbfbfb;
   border: 1px solid #d1d1d1;
@@ -413,7 +399,7 @@ canvas {
   margin: 5px;
 }
 
-/* line 35, layout/_social.scss */
+/* line 36, layout/_social.scss */
 .social-icon {
   width: 30px;
   height: 30px;
@@ -421,134 +407,97 @@ canvas {
   margin: auto;
   padding-top: 7px;
 }
+@media (min-width: 1024px) {
+  /* line 36, layout/_social.scss */
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
 
-/* line 43, layout/_social.scss */
+/* line 49, layout/_social.scss */
 .social-icon-wrapper {
-  background: #7377bf;
+  background: #7477bf;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  display: flex;
   align-self: center;
   margin: 10px;
 }
-
-/* line 53, layout/_social.scss */
-.social-inner {
-  fill: #fff;
+@media (min-width: 1024px) {
+  /* line 49, layout/_social.scss */
+  .social-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+  }
 }
 
-/* line 58, layout/_social.scss */
+/* line 65, layout/_social.scss */
+.social-inner {
+  fill: white;
+}
+
+/* line 70, layout/_social.scss */
 .social-text {
   text-align: center;
 }
 
-/* line 62, layout/_social.scss */
+/* line 74, layout/_social.scss */
 .social-number {
   margin: 0;
 }
 
-/* line 66, layout/_social.scss */
+/* line 78, layout/_social.scss */
 h4 {
   margin: 0;
 }
 
-@media (min-width: 768px) {
-  /* line 71, layout/_social.scss */
-  .social-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 81, layout/_social.scss */
-  .social-icon {
-    width: 50px;
-    height: 50px;
-    align-self: center;
-    margin: auto;
-    padding-top: 7px;
-  }
-
-  /* line 89, layout/_social.scss */
-  .social-icon-wrapper {
-    background: #7377bf;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-self: center;
-    margin: 20px;
-  }
-
-  /* line 99, layout/_social.scss */
-  .social-number {
-    margin: 0;
-  }
-}
 /*New Members*/
 /* line 3, layout/_members.scss */
 .new-members, .recent-activity {
   margin: 0px auto;
   padding: 10px 20px;
-  border-bottom: solid 1px #d2d2d2;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
 }
 
-/* line 12, layout/_members.scss */
-.member-list, .member-float {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-/* line 19, layout/_members.scss */
-.member-list:not(:last-child) {
-  border-bottom: solid 1px #d2d2d2;
-}
-
-/* line 23, layout/_members.scss */
+/* line 20, layout/_members.scss */
 .member-list a {
   display: block;
   align-self: center;
 }
-
-/* line 28, layout/_members.scss */
-.when {
-  display: block;
+/* line 24, layout/_members.scss */
+.member-list p {
   align-self: center;
 }
-
-/* line 33, layout/_members.scss */
-.member-list p, .member-list img {
-  align-self: center;
-}
-
-/* line 37, layout/_members.scss */
+/* line 27, layout/_members.scss */
 .member-list img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: inline;
   margin: 5px;
+  align-self: center;
 }
 
-/* line 45, layout/_members.scss */
+/* line 37, layout/_members.scss */
+.when {
+  display: block;
+  align-self: center;
+}
+
+/* line 42, layout/_members.scss */
 .flex-list {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 @media (min-width: 768px) {
-  /* line 54, layout/_members.scss */
+  /* line 48, layout/_members.scss */
   .new-members, .message-user {
-    border-right: solid 1px #d2d2d2;
+    border-right: solid 1px #dfdfdf;
   }
 }
+
 /*Message Users*/
 /* line 3, layout/_forms.scss */
 .message-user {
@@ -567,7 +516,7 @@ h4 {
   padding: 12px 2px;
   border-radius: 5px;
   margin: 12px auto;
-  border: 2px solid #d1d1d1;
+  border: 2px solid #dfdfdf;
   width: 90%;
   background-color: #fbfbfb;
 }
@@ -582,7 +531,7 @@ button {
   padding: 12px 2px;
   border-radius: 5px;
   margin: 12px auto;
-  background-color: #7377bf;
+  background-color: #7477bf;
   border: none;
 }
 
@@ -600,7 +549,6 @@ button {
 
 /* line 45, layout/_forms.scss */
 .inner-settings {
-  display: flex;
   justify-content: flex-start;
   align-items: center;
 }
@@ -610,7 +558,33 @@ button {
   margin-right: 20px;
 }
 
-/* line 54, layout/_forms.scss */
+/* line 55, layout/_forms.scss */
+.settings-buttons {
+  text-align: center;
+}
+
+/* line 59, layout/_forms.scss */
+#timezone {
+  width: 90%;
+  padding: 12px 2px;
+  border-radius: 5px;
+  margin: 20px auto;
+  border: 2px solid #dfdfdf;
+}
+
+/* line 68, layout/_forms.scss */
+#save, #cancel {
+  width: 45%;
+  margin-top: 30px;
+}
+
+/* line 73, layout/_forms.scss */
+#cancel {
+  background-color: #b6b6b6;
+}
+
+/*Switches*/
+/* line 79, layout/_forms.scss */
 .onoffswitch {
   position: relative;
   width: 90px;
@@ -619,12 +593,12 @@ button {
   -ms-user-select: none;
 }
 
-/* line 58, layout/_forms.scss */
+/* line 83, layout/_forms.scss */
 .onoffswitch-checkbox {
   display: none;
 }
 
-/* line 61, layout/_forms.scss */
+/* line 86, layout/_forms.scss */
 .onoffswitch-label {
   display: block;
   overflow: hidden;
@@ -633,7 +607,7 @@ button {
   border-radius: 20px;
 }
 
-/* line 65, layout/_forms.scss */
+/* line 90, layout/_forms.scss */
 .onoffswitch-inner {
   display: block;
   width: 200%;
@@ -641,7 +615,7 @@ button {
   transition: margin 0.3s ease-in 0s;
 }
 
-/* line 69, layout/_forms.scss */
+/* line 94, layout/_forms.scss */
 .onoffswitch-inner:before, .onoffswitch-inner:after {
   display: block;
   float: left;
@@ -656,15 +630,15 @@ button {
   box-sizing: border-box;
 }
 
-/* line 74, layout/_forms.scss */
+/* line 99, layout/_forms.scss */
 .onoffswitch-inner:before {
   content: "ON";
   padding-left: 10px;
-  background-color: #7477BF;
-  color: #FFFFFF;
+  background-color: #7477bf;
+  color: white;
 }
 
-/* line 79, layout/_forms.scss */
+/* line 105, layout/_forms.scss */
 .onoffswitch-inner:after {
   content: "OFF";
   padding-right: 10px;
@@ -673,12 +647,12 @@ button {
   text-align: right;
 }
 
-/* line 85, layout/_forms.scss */
+/* line 111, layout/_forms.scss */
 .onoffswitch-switch {
   display: block;
   width: 18px;
   margin: 6px;
-  background: #FFFFFF;
+  background: white;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -688,44 +662,19 @@ button {
   transition: all 0.3s ease-in 0s;
 }
 
-/* line 93, layout/_forms.scss */
+/* line 119, layout/_forms.scss */
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
   margin-left: 0;
 }
 
-/* line 96, layout/_forms.scss */
+/* line 122, layout/_forms.scss */
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
 }
 
-/* line 101, layout/_forms.scss */
-.settings-buttons {
-  text-align: center;
-}
-
-/* line 105, layout/_forms.scss */
-#timezone {
-  width: 90%;
-  padding: 12px 2px;
-  border-radius: 5px;
-  margin: 20px auto;
-  border: 2px solid #dfdfdf;
-}
-
-/* line 114, layout/_forms.scss */
-#save, #cancel {
-  width: 45%;
-  margin-top: 30px;
-}
-
-/* line 119, layout/_forms.scss */
-#cancel {
-  background-color: #b2b2b2;
-}
-
 /* line 1, components/_typography.scss */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1;
   font-weight: 300;
 }
@@ -734,13 +683,13 @@ body {
 /* line 9, components/_typography.scss */
 .title {
   font-size: 15px;
-  color: #fff;
+  color: white;
 }
 
 /* line 14, components/_typography.scss */
 .name {
   font-size: 12px;
-  color: #fff;
+  color: white;
 }
 
 /* line 19, components/_typography.scss */
@@ -772,78 +721,90 @@ h3 {
   font-size: 12px;
 }
 
-/*Social*/
+/*Graphs*/
 /* line 45, components/_typography.scss */
+.traffic-nav li a {
+  text-decoration: none;
+  color: #b6b6b6;
+}
+
+/* line 50, components/_typography.scss */
+#selected {
+  color: white;
+}
+
+/*Social*/
+/* line 56, components/_typography.scss */
 .social-number {
   font-size: 20px;
   font-weight: 300;
 }
 
-/* line 50, components/_typography.scss */
+/* line 61, components/_typography.scss */
 h4 {
   color: #7477bf;
 }
 
 /*Members*/
-/* line 56, components/_typography.scss */
+/* line 67, components/_typography.scss */
 .new-members, .recent-activity {
-  font-size: 13px;
-}
-
-/* line 60, components/_typography.scss */
-.member-list a {
-  text-decoration: none;
-  color: #777ac0;
   font-size: 12px;
 }
 
-/* line 66, components/_typography.scss */
+/* line 71, components/_typography.scss */
+.member-list a {
+  text-decoration: none;
+  color: #7477bf;
+  font-size: 12px;
+}
+
+/* line 77, components/_typography.scss */
 .when {
   font-size: 12px;
 }
 
 /*Forms*/
-/* line 72, components/_typography.scss */
+/* line 83, components/_typography.scss */
 .message-user {
-  font-size: 13px;
+  font-size: 12px;
 }
 
-/* line 76, components/_typography.scss */
+/* line 87, components/_typography.scss */
 #search_user, .user-message {
   font-size: 12px;
 }
 
-/* line 81, components/_typography.scss */
+/* line 92, components/_typography.scss */
 button {
   font-size: 12px;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
 }
 
-/* line 87, components/_typography.scss */
+/* line 98, components/_typography.scss */
 .settings {
   font-size: 17px;
 }
 
-/* line 91, components/_typography.scss */
+/* line 102, components/_typography.scss */
 #timezone {
   font-size: 12px;
 }
 
 @media (min-width: 768px) {
-  /* line 98, components/_typography.scss */
+  /* line 109, components/_typography.scss */
   .alert,
   .new-alert {
     font-size: 15px;
   }
 
-  /* line 102, components/_typography.scss */
+  /* line 113, components/_typography.scss */
   #search_input {
     font-size: 12px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 109, components/_typography.scss */
+  /* line 120, components/_typography.scss */
   .social-number {
     font-size: 35px;
     font-weight: 300;

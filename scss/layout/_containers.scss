@@ -1,22 +1,18 @@
 /*main container settings*/
 
 .main-content {
-	display: flex;
-	flex-flow: row wrap;
+	@extend %flex-row;
+	flex-wrap: wrap; 
 }
 
 .traffic, .daily-traffic, .mobile-traffic, .alert, .new-alert, .search, .dashboard, .social, .new-members, .recent-activity, .settings, .message-user {
 	flex: 1 100%;
 }
 
-
-
-@media (min-width: 768px) {
-
-/* ---- Layout Containers ---- */
 .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
+  	@media #{$brk-narrow} {
   	flex: 1 49%; 
   }
-
 }
+
 

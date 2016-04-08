@@ -1,86 +1,97 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: $font-family;
 	line-height: 1;
-	font-weight: 300;
+	font-weight: $light-font;
 }
 
 /*Header*/
 
 .title {
-	font-size: 15px;
-	color: #fff;
+	font-size: $medium-font;
+	color: $white;
 }
 
 .name {
-	font-size: 12px;
-	color: #fff;
+	font-size: $small-font;
+	color: $white;
 }
 
 .dashboard-title {
-	font-size: 20px;
+	font-size: $large-font;
 }
 
 h3 {
-	font-size: 15px;
-	font-weight: 300;
+	font-size: $medium-font;
+	font-weight: $light-font;
 	text-transform: uppercase;
 }
 
 .alert,
 .new-alert {
-	color: white;
-	font-size: 12px;
+	color: $white;
+	font-size: $small-font;
 }
 
 .exit, .new-exit {
-	font-weight: 700;
+	font-weight: $heavy-font;
 }
 
 #search_input {
-	font-size: 12px;
+	font-size: $small-font;
+}
+
+/*Graphs*/
+
+.traffic-nav li a{
+	text-decoration: none;
+	color: $medium-gray;
+}
+
+#selected {
+	color: $white;
 }
 
 /*Social*/
 
 .social-number {
-	font-size: 20px;
-	font-weight: 300;
+	font-size: $large-font;
+	font-weight: $light-font;
 }
 
 h4 {
-	color: #7477bf;
+	color: $light-purple;
 }
 
 /*Members*/
 
 .new-members, .recent-activity {
-	font-size: 13px;
+	font-size: $small-font;
 }
 
 .member-list a {
 	text-decoration: none;
-	color: #777ac0;
-	font-size: 12px;
+	color: $light-purple;
+	font-size: $small-font;
 }
 
 .when {
-	font-size: 12px;
+	font-size: $small-font;
 }
 
 /*Forms*/
 
 .message-user {
-	  font-size: 13px;
+	  font-size: $small-font;
 	}
 
 #search_user, .user-message {
-	font-size: 12px;
+	font-size: $small-font;
 }
 
 
 button {
-	font-size: 12px;
-	color: #fff;
+	font-size: $small-font;
+	color: $white;
 	text-transform: uppercase;
 }
 
@@ -89,18 +100,18 @@ button {
 }
 
 #timezone {
-	font-size: 12px;
+	font-size: $small-font;
 }
 
 @media (min-width: 768px) {
 
 .alert,
 .new-alert {
-	font-size: 15px;
+	font-size: $medium-font;
 }
 
 #search_input {
-	font-size: 12px;
+	font-size: $small-font;
 	}
 
 }
@@ -108,6 +119,6 @@ button {
 @media (min-width: 1024px) {
 .social-number {
 	font-size: 35px;
-	font-weight: 300;
+	font-weight: $light-font;
 }
 }
