@@ -1,0 +1,1263 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+/* normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, _normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, _normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, _normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, _normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, _normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, _normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, _normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, _normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, _normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, _normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, _normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, _normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, _normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, _normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, _normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, _normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, _normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, _normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, _normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, _normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, _normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, _normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, _normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, _normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, _normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, _normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, _normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, _normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, _normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, _normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, _normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, _normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, _normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, _normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, _normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, _normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, _normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, _normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, _normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 425, _normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* Lists
+   ========================================================================== */
+/**
+ * Remove default list styles, margins and padding.
+ */
+/* line 437, _normalize.scss */
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 1, base/_base.scss */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 6, base/_base.scss */
+body {
+  margin: 0 auto;
+}
+
+/* line 3, layout/_header.scss */
+header {
+  background-color: #7477bf;
+}
+
+/* line 7, layout/_header.scss */
+.title {
+  padding: 12px 10px;
+}
+@media (min-width: 768px) {
+  /* line 7, layout/_header.scss */
+  .title {
+    padding: 25px 10px;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+/* line 22, layout/_header.scss */
+.name {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 22, layout/_header.scss */
+  .name {
+    padding: 28px 10px;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+/* line 32, layout/_header.scss */
+#alert-dot {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: -16px;
+  right: 5px;
+}
+
+/* line 39, layout/_header.scss */
+.profile-photo {
+  border-radius: 50%;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+@media (min-width: 768px) {
+  /* line 39, layout/_header.scss */
+  .profile-photo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* line 52, layout/_header.scss */
+#alert, #line {
+  align-self: center;
+}
+
+/* line 56, layout/_header.scss */
+#alert {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  /* line 56, layout/_header.scss */
+  #alert {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*pop-up alerts*/
+/* line 67, layout/_header.scss */
+.alert {
+  background-color: #7477bf;
+  display: block;
+  margin: 15px;
+  padding: 10px;
+}
+
+/* line 75, layout/_header.scss */
+.exit {
+  cursor: pointer;
+  float: right;
+}
+
+@media (min-width: 768px) {
+  /* line 80, layout/_header.scss */
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+/* line 88, layout/_header.scss */
+.search {
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  /* line 88, layout/_header.scss */
+  .search {
+    flex-grow: 2;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    background: #fbfbfb;
+  }
+}
+
+/* line 100, layout/_header.scss */
+.dashboard-title {
+  text-align: center;
+  margin: 25px;
+}
+@media (min-width: 768px) {
+  /* line 100, layout/_header.scss */
+  .dashboard-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+/* line 111, layout/_header.scss */
+.search {
+  flex-grow: 2;
+  border-bottom: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  background: #fbfbfb;
+}
+
+/* line 118, layout/_header.scss */
+#search_input {
+  padding: 12px 2px;
+  margin: 12px 50px;
+  align-self: flex-end;
+  border: 2px solid #dfdfdf;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  /* line 118, layout/_header.scss */
+  #search_input {
+    width: 33%;
+  }
+}
+
+/* line 131, layout/_header.scss */
+.fa {
+  position: relative;
+  align-self: center;
+  right: 73px;
+  opacity: .5;
+}
+
+/* ---- Navigation ---- */
+/* line 144, layout/_header.scss */
+.nav {
+  justify-content: space-between;
+  background-color: #4d4c72;
+  list-style: none;
+}
+/* line 151, layout/_header.scss */
+.nav li {
+  padding: 10px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  /* line 151, layout/_header.scss */
+  .nav li {
+    padding: 30px;
+  }
+}
+/* line 160, layout/_header.scss */
+.nav li#menu-page-selected:after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -101%;
+  border-right: solid 3px #85db80;
+}
+/* line 172, layout/_header.scss */
+.nav img {
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 768px) {
+  /* line 172, layout/_header.scss */
+  .nav img {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* line 183, layout/_header.scss */
+.nav ul {
+  overflow: hidden;
+}
+
+/* line 189, layout/_header.scss */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* line 198, layout/_header.scss */
+img {
+  width: 30px;
+  height: 30px;
+}
+
+/*main container settings*/
+/* line 3, layout/_containers.scss */
+.main-content {
+  flex-wrap: wrap;
+}
+
+/* line 8, layout/_containers.scss */
+.traffic, .daily-traffic, .mobile-traffic, .alert, .new-alert, .search, .dashboard, .social, .new-members, .recent-activity, .settings, .message-user {
+  flex: 1 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 12, layout/_containers.scss */
+  .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
+    flex: 1 49%;
+  }
+}
+
+/* line 1, layout/_extends.scss */
+.nav, .flex-mobile-box, .social-wrapper, .new-members, .recent-activity, .flex-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 6, layout/_extends.scss */
+.search, .flex, .main-content, .main-header, .name-group, .traffic-nav-flex, .member-list, .member-float, .social-section, .social-icon-wrapper, .inner-settings {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 11, layout/_extends.scss */
+.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float {
+  justify-content: space-between;
+}
+
+/* line 16, layout/_extends.scss */
+.alert, #search_input, .nav li#menu-page-selected:after {
+  border-radius: 5px;
+}
+
+/* line 20, layout/_extends.scss */
+.mobile-traffic, .daily-traffic, .social, .new-members, .recent-activity, .member-list:not(:last-child) {
+  border-bottom: solid 1px #dfdfdf;
+}
+
+/* line 1, layout/_graphs.scss */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 275px;
+}
+
+/* line 11, layout/_graphs.scss */
+.traffic-nav {
+  align-self: center;
+}
+
+/* line 14, layout/_graphs.scss */
+.traffic-nav li {
+  display: inline-block;
+  flex-direction: row-reverse;
+  margin: 10px 5px;
+}
+
+/* line 20, layout/_graphs.scss */
+.traffic-nav li a {
+  padding: 5px 10px;
+}
+
+/* line 24, layout/_graphs.scss */
+#selected {
+  background-color: #81c98f;
+  border-radius: 45%;
+}
+
+/* line 29, layout/_graphs.scss */
+.traffic, .daily-traffic, .mobile-traffic {
+  width: 80%;
+  margin: 0px auto 10px;
+  padding: 10px 20px;
+}
+
+/* line 35, layout/_graphs.scss */
+.flex-mobile-box {
+  justify-content: flex-start;
+}
+@media (min-width: 1024px) {
+  /* line 35, layout/_graphs.scss */
+  .flex-mobile-box {
+    flex-direction: row;
+  }
+}
+
+/* line 45, layout/_graphs.scss */
+#legend {
+  margin-left: -100px;
+  align-self: center;
+}
+
+/* line 50, layout/_graphs.scss */
+.doughnut-legend {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+/* line 55, layout/_graphs.scss */
+.doughnut-legend li {
+  margin: 2px;
+}
+/* line 57, layout/_graphs.scss */
+.doughnut-legend li span {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  border-radius: 15%;
+  margin-right: 1px;
+}
+
+@media (min-width: 768px) {
+  /* line 67, layout/_graphs.scss */
+  .mobile-traffic, .daily-traffic {
+    border-top: solid 1px #dfdfdf;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 75, layout/_graphs.scss */
+  .daily-traffic {
+    border-right: solid 1px #dfdfdf;
+  }
+}
+
+/* line 1, layout/_social.scss */
+.social-wrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  /* line 1, layout/_social.scss */
+  .social-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* line 13, layout/_social.scss */
+.social-section {
+  justify-content: space-around;
+}
+
+/* line 18, layout/_social.scss */
+.social-text {
+  align-self: center;
+  margin-right: 67px;
+}
+
+/* line 22, layout/_social.scss */
+.social {
+  margin: 0px auto;
+  padding: 10px 20px 40px;
+}
+
+/* line 29, layout/_social.scss */
+.social-section {
+  background-color: #fbfbfb;
+  border: 1px solid #d1d1d1;
+  border-radius: 2.5%;
+  margin: 5px;
+}
+
+/* line 36, layout/_social.scss */
+.social-icon {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  margin: auto;
+  padding-top: 7px;
+}
+@media (min-width: 1024px) {
+  /* line 36, layout/_social.scss */
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* line 49, layout/_social.scss */
+.social-icon-wrapper {
+  background: #7477bf;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  margin: 10px;
+}
+@media (min-width: 1024px) {
+  /* line 49, layout/_social.scss */
+  .social-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+  }
+}
+
+/* line 65, layout/_social.scss */
+.social-inner {
+  fill: white;
+}
+
+/* line 70, layout/_social.scss */
+.social-text {
+  text-align: center;
+}
+
+/* line 74, layout/_social.scss */
+.social-number {
+  margin: 0;
+}
+
+/* line 78, layout/_social.scss */
+h4 {
+  margin: 0;
+}
+
+/*New Members*/
+/* line 3, layout/_members.scss */
+.new-members, .recent-activity {
+  margin: 0px auto;
+  padding: 10px 20px;
+  justify-content: space-around;
+}
+
+/* line 20, layout/_members.scss */
+.member-list a {
+  display: block;
+  align-self: center;
+}
+/* line 24, layout/_members.scss */
+.member-list p {
+  align-self: center;
+}
+/* line 27, layout/_members.scss */
+.member-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline;
+  margin: 5px;
+  align-self: center;
+}
+
+/* line 37, layout/_members.scss */
+.when {
+  display: block;
+  align-self: center;
+}
+
+/* line 42, layout/_members.scss */
+.flex-list {
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  /* line 48, layout/_members.scss */
+  .new-members, .message-user {
+    border-right: solid 1px #dfdfdf;
+  }
+}
+
+/*Message Users*/
+/* line 3, layout/_forms.scss */
+.message-user {
+  margin: 0px auto;
+  padding: 10px 20px;
+}
+
+/* line 7, layout/_forms.scss */
+.user-search {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 12, layout/_forms.scss */
+#search_user, .user-message {
+  padding: 12px 2px;
+  border-radius: 5px;
+  margin: 12px auto;
+  border: 2px solid #dfdfdf;
+  width: 90%;
+  background-color: #fbfbfb;
+}
+
+/* line 21, layout/_forms.scss */
+.user-message {
+  min-height: 100px;
+}
+
+/* line 26, layout/_forms.scss */
+button {
+  padding: 12px 2px;
+  border-radius: 5px;
+  margin: 12px auto;
+  background-color: #7477bf;
+  border: none;
+}
+
+/* line 34, layout/_forms.scss */
+#send {
+  width: 90%;
+}
+
+/*Settings*/
+/* line 40, layout/_forms.scss */
+.settings {
+  margin: 0px auto;
+  padding: 10px 20px;
+}
+
+/* line 45, layout/_forms.scss */
+.inner-settings {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* line 51, layout/_forms.scss */
+.settings-text {
+  margin-right: 20px;
+}
+
+/* line 55, layout/_forms.scss */
+.settings-buttons {
+  text-align: center;
+}
+
+/* line 59, layout/_forms.scss */
+#timezone {
+  width: 90%;
+  padding: 12px 2px;
+  border-radius: 5px;
+  margin: 20px auto;
+  border: 2px solid #dfdfdf;
+}
+
+/* line 68, layout/_forms.scss */
+#save, #cancel {
+  width: 45%;
+  margin-top: 30px;
+}
+
+/* line 73, layout/_forms.scss */
+#cancel {
+  background-color: #b6b6b6;
+}
+
+/*Switches*/
+/* line 79, layout/_forms.scss */
+.onoffswitch {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* line 83, layout/_forms.scss */
+.onoffswitch-checkbox {
+  display: none;
+}
+
+/* line 86, layout/_forms.scss */
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+}
+
+/* line 90, layout/_forms.scss */
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+/* line 94, layout/_forms.scss */
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* line 99, layout/_forms.scss */
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: #7477bf;
+  color: white;
+}
+
+/* line 105, layout/_forms.scss */
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+
+/* line 111, layout/_forms.scss */
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+/* line 119, layout/_forms.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+/* line 122, layout/_forms.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+/* line 1, components/_typography.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 300;
+}
+
+/*Header*/
+/* line 9, components/_typography.scss */
+.title {
+  font-size: 15px;
+  color: white;
+}
+
+/* line 14, components/_typography.scss */
+.name {
+  font-size: 12px;
+  color: white;
+}
+
+/* line 19, components/_typography.scss */
+.dashboard-title {
+  font-size: 20px;
+}
+
+/* line 23, components/_typography.scss */
+h3 {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 30, components/_typography.scss */
+.alert,
+.new-alert {
+  color: white;
+  font-size: 12px;
+}
+
+/* line 35, components/_typography.scss */
+.exit, .new-exit {
+  font-weight: 700;
+}
+
+/* line 39, components/_typography.scss */
+#search_input {
+  font-size: 12px;
+}
+
+/*Graphs*/
+/* line 45, components/_typography.scss */
+.traffic-nav li a {
+  text-decoration: none;
+  color: #b6b6b6;
+}
+
+/* line 50, components/_typography.scss */
+#selected {
+  color: white;
+}
+
+/*Social*/
+/* line 56, components/_typography.scss */
+.social-number {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* line 61, components/_typography.scss */
+h4 {
+  color: #7477bf;
+}
+
+/*Members*/
+/* line 67, components/_typography.scss */
+.new-members, .recent-activity {
+  font-size: 12px;
+}
+
+/* line 71, components/_typography.scss */
+.member-list a {
+  text-decoration: none;
+  color: #7477bf;
+  font-size: 12px;
+}
+
+/* line 77, components/_typography.scss */
+.when {
+  font-size: 12px;
+}
+
+/*Forms*/
+/* line 83, components/_typography.scss */
+.message-user {
+  font-size: 12px;
+}
+
+/* line 87, components/_typography.scss */
+#search_user, .user-message {
+  font-size: 12px;
+}
+
+/* line 92, components/_typography.scss */
+button {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 98, components/_typography.scss */
+.settings {
+  font-size: 17px;
+}
+
+/* line 102, components/_typography.scss */
+#timezone {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  /* line 109, components/_typography.scss */
+  .alert,
+  .new-alert {
+    font-size: 15px;
+  }
+
+  /* line 113, components/_typography.scss */
+  #search_input {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 120, components/_typography.scss */
+  .social-number {
+    font-size: 35px;
+    font-weight: 300;
+  }
+}

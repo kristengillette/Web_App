@@ -1,0 +1,124 @@
+body {
+	font-family: $font-family;
+	line-height: 1;
+	font-weight: $light-font;
+}
+
+/*Header*/
+
+.title {
+	font-size: $medium-font;
+	color: $white;
+}
+
+.name {
+	font-size: $small-font;
+	color: $white;
+}
+
+.dashboard-title {
+	font-size: $large-font;
+}
+
+h3 {
+	font-size: $medium-font;
+	font-weight: $light-font;
+	text-transform: uppercase;
+}
+
+.alert,
+.new-alert {
+	color: $white;
+	font-size: $small-font;
+}
+
+.exit, .new-exit {
+	font-weight: $heavy-font;
+}
+
+#search_input {
+	font-size: $small-font;
+}
+
+/*Graphs*/
+
+.traffic-nav li a{
+	text-decoration: none;
+	color: $medium-gray;
+}
+
+#selected {
+	color: $white;
+}
+
+/*Social*/
+
+.social-number {
+	font-size: $large-font;
+	font-weight: $light-font;
+}
+
+h4 {
+	color: $light-purple;
+}
+
+/*Members*/
+
+.new-members, .recent-activity {
+	font-size: $small-font;
+}
+
+.member-list a {
+	text-decoration: none;
+	color: $light-purple;
+	font-size: $small-font;
+}
+
+.when {
+	font-size: $small-font;
+}
+
+/*Forms*/
+
+.message-user {
+	  font-size: $small-font;
+	}
+
+#search_user, .user-message {
+	font-size: $small-font;
+}
+
+
+button {
+	font-size: $small-font;
+	color: $white;
+	text-transform: uppercase;
+}
+
+.settings {
+	font-size: 17px;
+}
+
+#timezone {
+	font-size: $small-font;
+}
+
+@media (min-width: 768px) {
+
+.alert,
+.new-alert {
+	font-size: $medium-font;
+}
+
+#search_input {
+	font-size: $small-font;
+	}
+
+}
+
+@media (min-width: 1024px) {
+.social-number {
+	font-size: 35px;
+	font-weight: $light-font;
+}
+}

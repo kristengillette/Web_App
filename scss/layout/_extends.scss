@@ -1,0 +1,22 @@
+%flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+%flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+%flex-spaced-between {
+	@extend %flex-row;
+	justify-content: space-between;
+}
+
+%curved-edges {
+	border-radius: 5px;
+}
+
+%bottom-border {
+	border-bottom: solid 1px $light-gray;
+}
