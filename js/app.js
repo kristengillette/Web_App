@@ -47,6 +47,8 @@ $("#save").click( function() {
 });
 
 $("#cancel").click( function() {
-	localStorage.timezone.clear();
+	localStorage.timezone = 0;
+	localStorage.profile = "checked";
+	localStorage.email = "checked";
 })
 loadSettings();
