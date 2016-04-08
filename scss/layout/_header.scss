@@ -1,0 +1,165 @@
+/* ---- Header ---- */
+header {
+	background-color: #7477bf;
+}
+
+.title {
+	padding: 12px 10px;
+}
+
+
+.main-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.name-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.name {
+	display: none;
+}
+
+#alert-dot {
+	height: 8px;
+	width: 8px;
+	position: relative;
+	top: -16px;
+	right: 5px;
+}
+.profile-photo {
+    border-radius: 50%;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+#alert, #line {
+	align-self: center;
+}
+
+#alert {
+	cursor: pointer;
+}
+/* ---- Navigation ---- */
+
+
+.flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav {
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #4d4c72;
+	list-style: none;
+
+	li 
+	{
+		padding: 10px;
+		position: relative;
+	}
+
+}
+
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+img {
+	width: 30px;
+	height: 30px;
+}
+
+
+
+nav img {
+	width: 20px;
+	height: 20px;
+}
+
+li#menu-page-selected:after {
+	content: " ";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: -101%;
+	border-right: solid 3px #85db80;
+	border-radius: 5%;
+}
+
+nav ul {
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+
+/* ---- Navigation ---- */
+.nav li {
+	padding: 30px;
+}  
+
+nav img {
+	width: 30px;
+	height: 30px;
+}
+
+/*Header*/
+
+.title{
+	padding: 25px 10px;
+}
+
+.name {
+	padding: 28px 10px;
+}
+
+.title, .name {
+	margin: 0;
+	display: inline-block;
+}
+
+#alert, .profile-photo {
+	width: 30px;
+	height: 30px;
+}
+
+/* ---- Top Containers ---- */
+.top-section, .dashboard-title, .search {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.search {
+	flex-grow: 2;
+	border-bottom: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	background: #fbfbfb;
+}
+
+#search_input {
+	font-size: 12px;
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 12px 50px;
+	align-self: flex-end;
+	border: 2px solid #dfdfdf;
+	width: 33%;
+}
+
+
+}

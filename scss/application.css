@@ -1,0 +1,749 @@
+/* ---- Header ---- */
+/* line 2, layout/_header.scss */
+header {
+  background-color: #7477bf;
+}
+
+/* line 6, layout/_header.scss */
+.title {
+  padding: 12px 10px;
+}
+
+/* line 11, layout/_header.scss */
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 17, layout/_header.scss */
+.name-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 23, layout/_header.scss */
+.name {
+  display: none;
+}
+
+/* line 27, layout/_header.scss */
+#alert-dot {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: -16px;
+  right: 5px;
+}
+
+/* line 34, layout/_header.scss */
+.profile-photo {
+  border-radius: 50%;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+
+/* line 42, layout/_header.scss */
+#alert, #line {
+  align-self: center;
+}
+
+/* line 46, layout/_header.scss */
+#alert {
+  cursor: pointer;
+}
+
+/* ---- Navigation ---- */
+/* line 52, layout/_header.scss */
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 57, layout/_header.scss */
+.nav {
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #4d4c72;
+  list-style: none;
+}
+/* line 64, layout/_header.scss */
+.nav li {
+  padding: 10px;
+  position: relative;
+}
+
+/* line 71, layout/_header.scss */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* line 80, layout/_header.scss */
+img {
+  width: 30px;
+  height: 30px;
+}
+
+/* line 87, layout/_header.scss */
+nav img {
+  width: 20px;
+  height: 20px;
+}
+
+/* line 92, layout/_header.scss */
+li#menu-page-selected:after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -101%;
+  border-right: solid 3px #85db80;
+  border-radius: 5%;
+}
+
+/* line 104, layout/_header.scss */
+nav ul {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  /* ---- Navigation ---- */
+  /* line 111, layout/_header.scss */
+  .nav li {
+    padding: 30px;
+  }
+
+  /* line 115, layout/_header.scss */
+  nav img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /*Header*/
+  /* line 122, layout/_header.scss */
+  .title {
+    padding: 25px 10px;
+  }
+
+  /* line 126, layout/_header.scss */
+  .name {
+    padding: 28px 10px;
+  }
+
+  /* line 130, layout/_header.scss */
+  .title, .name {
+    margin: 0;
+    display: inline-block;
+  }
+
+  /* line 135, layout/_header.scss */
+  #alert, .profile-photo {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* ---- Top Containers ---- */
+  /* line 141, layout/_header.scss */
+  .top-section, .dashboard-title, .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  /* line 147, layout/_header.scss */
+  .search {
+    flex-grow: 2;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    background: #fbfbfb;
+  }
+
+  /* line 154, layout/_header.scss */
+  #search_input {
+    font-size: 12px;
+    padding: 12px 2px;
+    border-radius: 5px;
+    margin: 12px 50px;
+    align-self: flex-end;
+    border: 2px solid #dfdfdf;
+    width: 33%;
+  }
+}
+/* ---- Layout Containers ---- */
+/*pop-up alerts*/
+/* line 6, layout/_containers.scss */
+.alert,
+.new-alert {
+  background-color: #7377bf;
+  color: white;
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* line 16, layout/_containers.scss */
+.exit, .new-exit {
+  cursor: pointer;
+  font-weight: 700;
+  float: right;
+}
+
+/* line 22, layout/_containers.scss */
+.highlight {
+  font-weight: 700;
+}
+
+/*top section*/
+/* line 27, layout/_containers.scss */
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* line 33, layout/_containers.scss */
+.dashboard-title {
+  text-align: center;
+  margin: 25px;
+}
+
+/* line 38, layout/_containers.scss */
+.search {
+  flex-grow: 2;
+  border-bottom: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  background: #fbfbfb;
+}
+
+/* line 45, layout/_containers.scss */
+#search_input {
+  font-size: 12px;
+  padding: 12px 2px;
+  border-radius: 5px;
+  margin: 12px 50px;
+  align-self: flex-end;
+  border: 2px solid #dfdfdf;
+  width: 90%;
+}
+
+/* line 55, layout/_containers.scss */
+.fa {
+  position: relative;
+  align-self: center;
+  right: 73px;
+  opacity: .5;
+}
+
+/*traffic middle section*/
+/* line 64, layout/_containers.scss */
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* line 69, layout/_containers.scss */
+.traffic, .daily-traffic, .mobile-traffic, .alert, .new-alert, .search, .dashboard, .social, .new-members, .recent-activity, .settings, .message-user {
+  flex: 1 100%;
+}
+
+/*traffic*/
+/* line 75, layout/_containers.scss */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 275px;
+}
+
+/* line 81, layout/_containers.scss */
+.traffic-nav-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 87, layout/_containers.scss */
+.traffic-nav {
+  align-self: center;
+}
+
+/* line 90, layout/_containers.scss */
+.traffic-nav li {
+  display: inline-block;
+  flex-direction: row-reverse;
+  margin: 10px 5px;
+}
+
+/* line 96, layout/_containers.scss */
+.traffic-nav li a {
+  text-decoration: none;
+  color: #b6b6b6;
+  padding: 5px 10px;
+}
+
+/* line 102, layout/_containers.scss */
+#selected {
+  color: #fff;
+  background-color: #81c98f;
+  border-radius: 45%;
+}
+
+/* line 108, layout/_containers.scss */
+.traffic, .daily-traffic, .mobile-traffic {
+  width: 80%;
+  margin: 0px auto 10px;
+  padding: 10px 20px;
+}
+
+/* line 114, layout/_containers.scss */
+.flex-mobile-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* line 120, layout/_containers.scss */
+.doughnut-legend li span {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  border-radius: 15%;
+  margin-right: 1px;
+}
+
+/* line 128, layout/_containers.scss */
+.doughnut-legend li {
+  margin: 2px;
+}
+
+/* line 132, layout/_containers.scss */
+#legend {
+  margin-left: -100px;
+  align-self: center;
+}
+
+/* line 137, layout/_containers.scss */
+.doughnut-legend {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+
+/* line 143, layout/_containers.scss */
+.mobile-traffic, .daily-traffic {
+  border-bottom: solid 1px #d2d2d2;
+}
+
+/*social*/
+/* line 149, layout/_containers.scss */
+.social-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 157, layout/_containers.scss */
+.social-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* line 163, layout/_containers.scss */
+.social-text {
+  align-self: center;
+  margin-right: 67px;
+}
+
+/* line 167, layout/_containers.scss */
+.social {
+  border-bottom: solid 1px #d2d2d2;
+  margin: 0px auto;
+  padding: 10px 20px 40px;
+}
+
+/* line 174, layout/_containers.scss */
+.social-section {
+  background-color: #fbfbfb;
+  border: 1px solid #d1d1d1;
+  border-radius: 2.5%;
+  margin: 5px;
+}
+
+/* line 181, layout/_containers.scss */
+.social-icon {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  margin: auto;
+  padding-top: 7px;
+}
+
+/* line 189, layout/_containers.scss */
+.social-icon-wrapper {
+  background: #7377bf;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-self: center;
+  margin: 10px;
+}
+
+/* line 199, layout/_containers.scss */
+.social-inner {
+  fill: #fff;
+}
+
+/* line 204, layout/_containers.scss */
+.social-text {
+  text-align: center;
+}
+
+/* line 208, layout/_containers.scss */
+.social-number {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* line 214, layout/_containers.scss */
+h4 {
+  color: #7477bf;
+  margin: 0;
+}
+
+/*New Members*/
+/* line 221, layout/_containers.scss */
+.new-members, .recent-activity {
+  margin: 0px auto;
+  padding: 10px 20px;
+  border-bottom: solid 1px #d2d2d2;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* line 231, layout/_containers.scss */
+.member-list, .member-float {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 238, layout/_containers.scss */
+.member-list:not(:last-child) {
+  border-bottom: solid 1px #d2d2d2;
+}
+
+/* line 242, layout/_containers.scss */
+.member-list a {
+  display: block;
+  align-self: center;
+  text-decoration: none;
+  color: #777ac0;
+  font-size: 12px;
+}
+
+/* line 250, layout/_containers.scss */
+.when {
+  display: block;
+  align-self: center;
+  font-size: 12px;
+}
+
+/* line 256, layout/_containers.scss */
+.member-list p, .member-list img {
+  align-self: center;
+}
+
+/* line 260, layout/_containers.scss */
+.member-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline;
+  margin: 5px;
+}
+
+/* line 268, layout/_containers.scss */
+.flex-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Message Users*/
+/* line 276, layout/_containers.scss */
+.message-user {
+  margin: 0px auto;
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+/* line 281, layout/_containers.scss */
+.user-search {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 286, layout/_containers.scss */
+#search_user, .user-message {
+  font-size: 12px;
+  padding: 12px 2px;
+  border-radius: 5px;
+  margin: 12px auto;
+  border: 2px solid #d1d1d1;
+  width: 90%;
+  background-color: #fbfbfb;
+}
+
+/* line 296, layout/_containers.scss */
+.user-message {
+  min-height: 100px;
+}
+
+/* line 301, layout/_containers.scss */
+button {
+  font-size: 12px;
+  padding: 12px 2px;
+  border-radius: 5px;
+  margin: 12px auto;
+  background-color: #7377bf;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* line 312, layout/_containers.scss */
+#send {
+  width: 90%;
+}
+
+/*Settings*/
+/* line 318, layout/_containers.scss */
+.settings {
+  margin: 0px auto;
+  padding: 10px 20px;
+  font-size: 17px;
+}
+
+/* line 324, layout/_containers.scss */
+.inner-settings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* line 330, layout/_containers.scss */
+.settings-text {
+  margin-right: 20px;
+}
+
+/* line 333, layout/_containers.scss */
+.onoffswitch {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* line 337, layout/_containers.scss */
+.onoffswitch-checkbox {
+  display: none;
+}
+
+/* line 340, layout/_containers.scss */
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+}
+
+/* line 344, layout/_containers.scss */
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+/* line 348, layout/_containers.scss */
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* line 353, layout/_containers.scss */
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: #7477BF;
+  color: #FFFFFF;
+}
+
+/* line 358, layout/_containers.scss */
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+
+/* line 364, layout/_containers.scss */
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+/* line 372, layout/_containers.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+/* line 375, layout/_containers.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+/* line 380, layout/_containers.scss */
+.settings-buttons {
+  text-align: center;
+}
+
+/* line 384, layout/_containers.scss */
+#timezone {
+  width: 90%;
+  font-size: 12px;
+  padding: 12px 2px;
+  border-radius: 5px;
+  margin: 20px auto;
+  border: 2px solid #dfdfdf;
+}
+
+/* line 394, layout/_containers.scss */
+#save, #cancel {
+  width: 45%;
+  margin-top: 30px;
+}
+
+/* line 399, layout/_containers.scss */
+#cancel {
+  background-color: #b2b2b2;
+}
+
+@media (min-width: 768px) {
+  /*Pop-up Alerts*/
+  /* line 406, layout/_containers.scss */
+  .alert,
+  .new-alert {
+    font-size: 15px;
+  }
+
+  /* ---- Layout Containers ---- */
+  /* line 411, layout/_containers.scss */
+  .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
+    flex: 1 49%;
+  }
+
+  /* line 415, layout/_containers.scss */
+  .mobile-traffic, .daily-traffic {
+    border-top: solid 1px #d2d2d2;
+    border-bottom: solid 1px #d2d2d2;
+  }
+
+  /* line 420, layout/_containers.scss */
+  .daily-traffic {
+    border-right: solid 1px #d2d2d2;
+  }
+
+  /*--Social--*/
+  /* line 426, layout/_containers.scss */
+  .social-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /*members*/
+  /* line 434, layout/_containers.scss */
+  .new-members, .message-user {
+    border-right: solid 1px #d2d2d2;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 442, layout/_containers.scss */
+  .flex-mobile-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  /* line 448, layout/_containers.scss */
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin: auto;
+    padding-top: 7px;
+  }
+
+  /* line 456, layout/_containers.scss */
+  .social-icon-wrapper {
+    background: #7377bf;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-self: center;
+    margin: 20px;
+  }
+
+  /* line 466, layout/_containers.scss */
+  .social-number {
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  /* line 472, layout/_containers.scss */
+  h4 {
+    color: #7477bf;
+    margin: 0;
+  }
+}
