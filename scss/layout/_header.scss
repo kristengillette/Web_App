@@ -1,3 +1,8 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
 /* ---- Header ---- */
 header {
 	background-color: #7477bf;
@@ -45,6 +50,58 @@ header {
 
 #alert {
 	cursor: pointer;
+}
+
+/*pop-up alerts*/
+
+.alert,
+.new-alert {
+	background-color: #7377bf;
+	display: block;
+	margin: 15px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.exit, .new-exit {
+	cursor: pointer;
+	float: right;
+}
+
+
+/*top section*/
+.search {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.dashboard-title {
+	text-align: center;
+	margin: 25px;
+}
+
+.search {
+	flex-grow: 2;
+	border-bottom: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	background: #fbfbfb;
+}
+
+#search_input {
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 12px 50px;
+	align-self: flex-end;
+	border: 2px solid #dfdfdf;
+	width: 90%;
+}
+
+.fa {
+	position: relative;
+	align-self: center;
+	right: 73px;
+	opacity: .5;
 }
 /* ---- Navigation ---- */
 
@@ -152,7 +209,6 @@ nav img {
 }
 
 #search_input {
-	font-size: 12px;
 	padding: 12px 2px;
 	border-radius: 5px;
 	margin: 12px 50px;

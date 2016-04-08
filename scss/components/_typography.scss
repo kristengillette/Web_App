@@ -1,0 +1,113 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1;
+	font-weight: 300;
+}
+
+/*Header*/
+
+.title {
+	font-size: 15px;
+	color: #fff;
+}
+
+.name {
+	font-size: 12px;
+	color: #fff;
+}
+
+.dashboard-title {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.alert,
+.new-alert {
+	color: white;
+	font-size: 12px;
+}
+
+.exit, .new-exit {
+	font-weight: 700;
+}
+
+#search_input {
+	font-size: 12px;
+}
+
+/*Social*/
+
+.social-number {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+h4 {
+	color: #7477bf;
+}
+
+/*Members*/
+
+.new-members, .recent-activity {
+	font-size: 13px;
+}
+
+.member-list a {
+	text-decoration: none;
+	color: #777ac0;
+	font-size: 12px;
+}
+
+.when {
+	font-size: 12px;
+}
+
+/*Forms*/
+
+.message-user {
+	  font-size: 13px;
+	}
+
+#search_user, .user-message {
+	font-size: 12px;
+}
+
+
+button {
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.settings {
+	font-size: 17px;
+}
+
+#timezone {
+	font-size: 12px;
+}
+
+@media (min-width: 768px) {
+
+.alert,
+.new-alert {
+	font-size: 15px;
+}
+
+#search_input {
+	font-size: 12px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+.social-number {
+	font-size: 35px;
+	font-weight: 300;
+}
+}
