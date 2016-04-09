@@ -746,12 +746,12 @@ ul.dropdown li {
 }
 
 /* line 235, layout/_header.scss */
-.sr-only {
+.mobile-menu {
   display: block;
 }
 @media (min-width: 768px) {
   /* line 235, layout/_header.scss */
-  .sr-only {
+  .mobile-menu {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -1273,117 +1273,135 @@ body {
 }
 
 /* line 19, components/_typography.scss */
-.dashboard-title {
-  font-size: 20px;
+.mobile-menu {
+  font-size: 12px;
 }
 
-/* line 23, components/_typography.scss */
+/* line 22, components/_typography.scss */
+.dashboard-title {
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  /* line 22, components/_typography.scss */
+  .dashboard-title {
+    font-size: 20px;
+  }
+}
+
+/* line 30, components/_typography.scss */
 h3 {
   font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-/* line 29, components/_typography.scss */
+/* line 36, components/_typography.scss */
 .alert {
   color: white;
   font-size: 12px;
 }
 @media (min-width: 768px) {
-  /* line 29, components/_typography.scss */
+  /* line 36, components/_typography.scss */
   .alert {
     font-size: 15px;
   }
 }
 
-/* line 38, components/_typography.scss */
-.exit, .new-exit {
+/* line 45, components/_typography.scss */
+.exit {
   font-weight: 700;
 }
 
-/* line 42, components/_typography.scss */
+/* line 49, components/_typography.scss */
 #search_input {
   font-size: 12px;
 }
 
 /*Graphs*/
-/* line 48, components/_typography.scss */
+/* line 55, components/_typography.scss */
 .traffic-nav li a {
   text-decoration: none;
   color: #b6b6b6;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  /* line 55, components/_typography.scss */
+  .traffic-nav li a {
+    font-size: 15px;
+  }
 }
 
-/* line 53, components/_typography.scss */
+/* line 65, components/_typography.scss */
 #selected {
   color: white;
 }
 
 /*Social*/
-/* line 59, components/_typography.scss */
+/* line 71, components/_typography.scss */
 .social-number {
   font-size: 20px;
   font-weight: 300;
 }
 @media (min-width: 1024px) {
-  /* line 59, components/_typography.scss */
+  /* line 71, components/_typography.scss */
   .social-number {
     font-size: 35px;
   }
 }
 
-/* line 68, components/_typography.scss */
+/* line 80, components/_typography.scss */
 h4 {
   color: #7477bf;
 }
 
 /*Members*/
-/* line 74, components/_typography.scss */
+/* line 86, components/_typography.scss */
 .new-members, .recent-activity {
   font-size: 12px;
 }
 
-/* line 78, components/_typography.scss */
+/* line 90, components/_typography.scss */
 .member-list a {
   text-decoration: none;
   color: #7477bf;
   font-size: 12px;
 }
 
-/* line 84, components/_typography.scss */
+/* line 96, components/_typography.scss */
 .when {
   font-size: 12px;
 }
 
 /*Forms*/
-/* line 90, components/_typography.scss */
+/* line 102, components/_typography.scss */
 .message-user {
   font-size: 12px;
 }
 
-/* line 94, components/_typography.scss */
+/* line 106, components/_typography.scss */
 #search_user, .user-message {
   font-size: 12px;
 }
 
-/* line 99, components/_typography.scss */
+/* line 111, components/_typography.scss */
 button {
   font-size: 12px;
   color: white;
   text-transform: uppercase;
 }
 
-/* line 105, components/_typography.scss */
+/* line 117, components/_typography.scss */
 .settings {
   font-size: 12px;
 }
 @media (min-width: 768px) {
-  /* line 105, components/_typography.scss */
+  /* line 117, components/_typography.scss */
   .settings {
     font-size: 15px;
   }
 }
 
-/* line 113, components/_typography.scss */
+/* line 125, components/_typography.scss */
 #timezone {
   font-size: 12px;
 }
