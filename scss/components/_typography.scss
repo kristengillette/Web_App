@@ -16,9 +16,16 @@ body {
 	color: $white;
 }
 
+.mobile-menu {
+	font-size: $small-font;
+}
 .dashboard-title {
+	font-size: $medium-font;
+	@media #{$brk-narrow} {
 	font-size: $large-font;
 }
+}
+
 
 h3 {
 	font-size: $medium-font;
@@ -35,7 +42,7 @@ h3 {
 	}
 }
 
-.exit, .new-exit {
+.exit {
 	font-weight: $heavy-font;
 }
 
@@ -48,6 +55,11 @@ h3 {
 .traffic-nav li a{
 	text-decoration: none;
 	color: $medium-gray;
+	font-size: $small-font;
+
+	@media #{$brk-narrow} {
+		font-size: $medium-font;
+	}
 }
 
 #selected {

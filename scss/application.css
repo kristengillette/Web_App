@@ -462,19 +462,19 @@ body {
 }
 
 /* line 1, layout/_extends.scss */
-.flex, .flex-mobile-box, .social-wrapper, .new-members, .recent-activity, .flex-list {
+.flex, .traffic-nav-flex, .flex-mobile-box, .social-wrapper, .new-members, .recent-activity, .flex-list {
   display: flex;
   flex-direction: column;
 }
 
 /* line 6, layout/_extends.scss */
-.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float, .search, .main-content, .social-section, .social-icon-wrapper, .inner-settings {
+.main-header, .name-group, .member-list, .member-float, .search, .main-content, .social-section, .social-icon-wrapper, .inner-settings {
   display: flex;
   flex-direction: row;
 }
 
 /* line 11, layout/_extends.scss */
-.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float {
+.main-header, .name-group, .member-list, .member-float {
   justify-content: space-between;
 }
 
@@ -746,12 +746,12 @@ ul.dropdown li {
 }
 
 /* line 235, layout/_header.scss */
-.sr-only {
+.mobile-menu {
   display: block;
 }
 @media (min-width: 768px) {
   /* line 235, layout/_header.scss */
-  .sr-only {
+  .mobile-menu {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -845,64 +845,72 @@ canvas {
   max-height: 275px;
 }
 
-/* line 11, layout/_graphs.scss */
+@media (min-width: 768px) {
+  /* line 7, layout/_graphs.scss */
+  .traffic-nav-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* line 16, layout/_graphs.scss */
 .traffic-nav {
   align-self: center;
 }
 
-/* line 14, layout/_graphs.scss */
+/* line 19, layout/_graphs.scss */
 .traffic-nav li {
   display: inline-block;
   flex-direction: row-reverse;
   margin: 10px 5px;
 }
 
-/* line 20, layout/_graphs.scss */
+/* line 25, layout/_graphs.scss */
 .traffic-nav li a {
   padding: 5px 10px;
 }
 
-/* line 24, layout/_graphs.scss */
+/* line 29, layout/_graphs.scss */
 #selected {
   background-color: #81c98f;
   border-radius: 45%;
 }
 
-/* line 29, layout/_graphs.scss */
+/* line 34, layout/_graphs.scss */
 .traffic, .daily-traffic, .mobile-traffic {
   width: 80%;
   margin: 0px auto 10px;
   padding: 10px 20px;
 }
 
-/* line 35, layout/_graphs.scss */
+/* line 40, layout/_graphs.scss */
 .flex-mobile-box {
   justify-content: flex-start;
 }
 @media (min-width: 1024px) {
-  /* line 35, layout/_graphs.scss */
+  /* line 40, layout/_graphs.scss */
   .flex-mobile-box {
     flex-direction: row;
   }
 }
 
-/* line 45, layout/_graphs.scss */
+/* line 50, layout/_graphs.scss */
 #legend {
   margin-left: -100px;
   align-self: center;
 }
 
-/* line 50, layout/_graphs.scss */
+/* line 55, layout/_graphs.scss */
 .doughnut-legend {
   list-style: none;
   position: relative;
   display: inline-block;
 }
-/* line 55, layout/_graphs.scss */
+/* line 60, layout/_graphs.scss */
 .doughnut-legend li {
   margin: 2px;
 }
-/* line 57, layout/_graphs.scss */
+/* line 62, layout/_graphs.scss */
 .doughnut-legend li span {
   width: 1em;
   height: 1em;
@@ -912,14 +920,14 @@ canvas {
 }
 
 @media (min-width: 768px) {
-  /* line 67, layout/_graphs.scss */
+  /* line 72, layout/_graphs.scss */
   .mobile-traffic, .daily-traffic {
     border-top: solid 1px #dfdfdf;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 75, layout/_graphs.scss */
+  /* line 80, layout/_graphs.scss */
   .daily-traffic {
     border-right: solid 1px #dfdfdf;
   }
@@ -1265,117 +1273,135 @@ body {
 }
 
 /* line 19, components/_typography.scss */
-.dashboard-title {
-  font-size: 20px;
+.mobile-menu {
+  font-size: 12px;
 }
 
-/* line 23, components/_typography.scss */
+/* line 22, components/_typography.scss */
+.dashboard-title {
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  /* line 22, components/_typography.scss */
+  .dashboard-title {
+    font-size: 20px;
+  }
+}
+
+/* line 30, components/_typography.scss */
 h3 {
   font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-/* line 29, components/_typography.scss */
+/* line 36, components/_typography.scss */
 .alert {
   color: white;
   font-size: 12px;
 }
 @media (min-width: 768px) {
-  /* line 29, components/_typography.scss */
+  /* line 36, components/_typography.scss */
   .alert {
     font-size: 15px;
   }
 }
 
-/* line 38, components/_typography.scss */
-.exit, .new-exit {
+/* line 45, components/_typography.scss */
+.exit {
   font-weight: 700;
 }
 
-/* line 42, components/_typography.scss */
+/* line 49, components/_typography.scss */
 #search_input {
   font-size: 12px;
 }
 
 /*Graphs*/
-/* line 48, components/_typography.scss */
+/* line 55, components/_typography.scss */
 .traffic-nav li a {
   text-decoration: none;
   color: #b6b6b6;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  /* line 55, components/_typography.scss */
+  .traffic-nav li a {
+    font-size: 15px;
+  }
 }
 
-/* line 53, components/_typography.scss */
+/* line 65, components/_typography.scss */
 #selected {
   color: white;
 }
 
 /*Social*/
-/* line 59, components/_typography.scss */
+/* line 71, components/_typography.scss */
 .social-number {
   font-size: 20px;
   font-weight: 300;
 }
 @media (min-width: 1024px) {
-  /* line 59, components/_typography.scss */
+  /* line 71, components/_typography.scss */
   .social-number {
     font-size: 35px;
   }
 }
 
-/* line 68, components/_typography.scss */
+/* line 80, components/_typography.scss */
 h4 {
   color: #7477bf;
 }
 
 /*Members*/
-/* line 74, components/_typography.scss */
+/* line 86, components/_typography.scss */
 .new-members, .recent-activity {
   font-size: 12px;
 }
 
-/* line 78, components/_typography.scss */
+/* line 90, components/_typography.scss */
 .member-list a {
   text-decoration: none;
   color: #7477bf;
   font-size: 12px;
 }
 
-/* line 84, components/_typography.scss */
+/* line 96, components/_typography.scss */
 .when {
   font-size: 12px;
 }
 
 /*Forms*/
-/* line 90, components/_typography.scss */
+/* line 102, components/_typography.scss */
 .message-user {
   font-size: 12px;
 }
 
-/* line 94, components/_typography.scss */
+/* line 106, components/_typography.scss */
 #search_user, .user-message {
   font-size: 12px;
 }
 
-/* line 99, components/_typography.scss */
+/* line 111, components/_typography.scss */
 button {
   font-size: 12px;
   color: white;
   text-transform: uppercase;
 }
 
-/* line 105, components/_typography.scss */
+/* line 117, components/_typography.scss */
 .settings {
   font-size: 12px;
 }
 @media (min-width: 768px) {
-  /* line 105, components/_typography.scss */
+  /* line 117, components/_typography.scss */
   .settings {
     font-size: 15px;
   }
 }
 
-/* line 113, components/_typography.scss */
+/* line 125, components/_typography.scss */
 #timezone {
   font-size: 12px;
 }
