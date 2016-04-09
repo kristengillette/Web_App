@@ -1253,6 +1253,12 @@ button {
   right: 0px;
 }
 
+/* line 131, layout/_forms.scss */
+.icon-credit {
+  font-size: 10px;
+  margin: 10px;
+}
+
 /* line 1, components/_typography.scss */
 body {
   font-family: "Open Sans", sans-serif;
