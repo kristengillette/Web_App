@@ -26,10 +26,13 @@ h3 {
 	text-transform: uppercase;
 }
 
-.alert,
-.new-alert {
+.alert {
 	color: $white;
 	font-size: $small-font;
+
+	@media #{$brk-narrow} {
+		font-size: $medium-font;
+	}
 }
 
 .exit, .new-exit {
@@ -56,7 +59,11 @@ h3 {
 .social-number {
 	font-size: $large-font;
 	font-weight: $light-font;
+
+	@media #{$brk-wide} {
+		font-size: 35px;
 }
+	}
 
 h4 {
 	color: $light-purple;
@@ -96,29 +103,15 @@ button {
 }
 
 .settings {
-	font-size: 17px;
+	font-size: $small-font;
+
+	@media #{$brk-narrow} {
+		font-size: $medium-font;
+	}
 }
 
 #timezone {
 	font-size: $small-font;
 }
 
-@media (min-width: 768px) {
 
-.alert,
-.new-alert {
-	font-size: $medium-font;
-}
-
-#search_input {
-	font-size: $small-font;
-	}
-
-}
-
-@media (min-width: 1024px) {
-.social-number {
-	font-size: 35px;
-	font-weight: $light-font;
-}
-}
