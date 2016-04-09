@@ -462,19 +462,19 @@ body {
 }
 
 /* line 1, layout/_extends.scss */
-.flex, .flex-mobile-box, .social-wrapper, .new-members, .recent-activity, .flex-list {
+.flex, .traffic-nav-flex, .flex-mobile-box, .social-wrapper, .new-members, .recent-activity, .flex-list {
   display: flex;
   flex-direction: column;
 }
 
 /* line 6, layout/_extends.scss */
-.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float, .search, .main-content, .social-section, .social-icon-wrapper, .inner-settings {
+.main-header, .name-group, .member-list, .member-float, .search, .main-content, .social-section, .social-icon-wrapper, .inner-settings {
   display: flex;
   flex-direction: row;
 }
 
 /* line 11, layout/_extends.scss */
-.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float {
+.main-header, .name-group, .member-list, .member-float {
   justify-content: space-between;
 }
 
@@ -845,64 +845,72 @@ canvas {
   max-height: 275px;
 }
 
-/* line 11, layout/_graphs.scss */
+@media (min-width: 768px) {
+  /* line 7, layout/_graphs.scss */
+  .traffic-nav-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* line 16, layout/_graphs.scss */
 .traffic-nav {
   align-self: center;
 }
 
-/* line 14, layout/_graphs.scss */
+/* line 19, layout/_graphs.scss */
 .traffic-nav li {
   display: inline-block;
   flex-direction: row-reverse;
   margin: 10px 5px;
 }
 
-/* line 20, layout/_graphs.scss */
+/* line 25, layout/_graphs.scss */
 .traffic-nav li a {
   padding: 5px 10px;
 }
 
-/* line 24, layout/_graphs.scss */
+/* line 29, layout/_graphs.scss */
 #selected {
   background-color: #81c98f;
   border-radius: 45%;
 }
 
-/* line 29, layout/_graphs.scss */
+/* line 34, layout/_graphs.scss */
 .traffic, .daily-traffic, .mobile-traffic {
   width: 80%;
   margin: 0px auto 10px;
   padding: 10px 20px;
 }
 
-/* line 35, layout/_graphs.scss */
+/* line 40, layout/_graphs.scss */
 .flex-mobile-box {
   justify-content: flex-start;
 }
 @media (min-width: 1024px) {
-  /* line 35, layout/_graphs.scss */
+  /* line 40, layout/_graphs.scss */
   .flex-mobile-box {
     flex-direction: row;
   }
 }
 
-/* line 45, layout/_graphs.scss */
+/* line 50, layout/_graphs.scss */
 #legend {
   margin-left: -100px;
   align-self: center;
 }
 
-/* line 50, layout/_graphs.scss */
+/* line 55, layout/_graphs.scss */
 .doughnut-legend {
   list-style: none;
   position: relative;
   display: inline-block;
 }
-/* line 55, layout/_graphs.scss */
+/* line 60, layout/_graphs.scss */
 .doughnut-legend li {
   margin: 2px;
 }
-/* line 57, layout/_graphs.scss */
+/* line 62, layout/_graphs.scss */
 .doughnut-legend li span {
   width: 1em;
   height: 1em;
@@ -912,14 +920,14 @@ canvas {
 }
 
 @media (min-width: 768px) {
-  /* line 67, layout/_graphs.scss */
+  /* line 72, layout/_graphs.scss */
   .mobile-traffic, .daily-traffic {
     border-top: solid 1px #dfdfdf;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 75, layout/_graphs.scss */
+  /* line 80, layout/_graphs.scss */
   .daily-traffic {
     border-right: solid 1px #dfdfdf;
   }
