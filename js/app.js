@@ -1,3 +1,10 @@
+// Hamburger Nav
+
+$( '.menu-btn' ).click(function(){
+    	     $('.nav').toggleClass('expand')
+    	     })
+
+//Navigation Highlight//
 $(".nav li").click(function(){
     $(".nav li").removeAttr('id', 'menu-page-selected');
     $(this).attr('id', 'menu-page-selected');
@@ -12,6 +19,9 @@ else {
 	$("#warning").text("Thanks for sending your message!");
 }
 });
+
+
+//Saving User Settings
 
 function loadSettings() {
 	if (localStorage.email == "unchecked") {
@@ -51,4 +61,5 @@ $("#cancel").click( function() {
 	localStorage.profile = "checked";
 	localStorage.email = "checked";
 })
+
 loadSettings();

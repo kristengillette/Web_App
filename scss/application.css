@@ -461,17 +461,44 @@ body {
   margin: 0 auto;
 }
 
+/* line 1, layout/_extends.scss */
+.flex, .flex-mobile-box, .social-wrapper, .new-members, .recent-activity, .flex-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 6, layout/_extends.scss */
+.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float, .search, .main-content, .social-section, .social-icon-wrapper, .inner-settings {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 11, layout/_extends.scss */
+.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float {
+  justify-content: space-between;
+}
+
+/* line 16, layout/_extends.scss */
+.alert, #search_input {
+  border-radius: 5px;
+}
+
+/* line 20, layout/_extends.scss */
+ul.dropdown li, .mobile-traffic, .daily-traffic, .social, .new-members, .recent-activity, .member-list:not(:last-child) {
+  border-bottom: solid 1px #dfdfdf;
+}
+
 /* line 3, layout/_header.scss */
 header {
   background-color: #7477bf;
 }
 
-/* line 7, layout/_header.scss */
+/* line 8, layout/_header.scss */
 .title {
   padding: 12px 10px;
 }
 @media (min-width: 768px) {
-  /* line 7, layout/_header.scss */
+  /* line 8, layout/_header.scss */
   .title {
     padding: 25px 10px;
     margin: 0;
@@ -479,12 +506,17 @@ header {
   }
 }
 
-/* line 22, layout/_header.scss */
+/* line 19, layout/_header.scss */
+.main-header {
+  position: relative;
+}
+
+/* line 27, layout/_header.scss */
 .name {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 22, layout/_header.scss */
+  /* line 27, layout/_header.scss */
   .name {
     padding: 28px 10px;
     margin: 0;
@@ -492,7 +524,7 @@ header {
   }
 }
 
-/* line 32, layout/_header.scss */
+/* line 37, layout/_header.scss */
 #alert-dot {
   height: 8px;
   width: 8px;
@@ -501,33 +533,35 @@ header {
   right: 5px;
 }
 
-/* line 39, layout/_header.scss */
+/* line 44, layout/_header.scss */
 .profile-photo {
   border-radius: 50%;
   margin: 10px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   align-self: center;
 }
 @media (min-width: 768px) {
-  /* line 39, layout/_header.scss */
+  /* line 44, layout/_header.scss */
   .profile-photo {
     width: 30px;
     height: 30px;
   }
 }
 
-/* line 52, layout/_header.scss */
+/* line 57, layout/_header.scss */
 #alert, #line {
   align-self: center;
 }
 
-/* line 56, layout/_header.scss */
+/* line 61, layout/_header.scss */
 #alert {
   cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 @media (min-width: 768px) {
-  /* line 56, layout/_header.scss */
+  /* line 61, layout/_header.scss */
   #alert {
     width: 30px;
     height: 30px;
@@ -535,7 +569,36 @@ header {
 }
 
 /*pop-up alerts*/
-/* line 67, layout/_header.scss */
+/* line 73, layout/_header.scss */
+.name-group {
+  position: relative;
+}
+
+/* line 77, layout/_header.scss */
+.dropdown {
+  position: absolute;
+  padding: .5em 1em;
+  background: #777;
+  border-radius: .2em .2em 0 0;
+  z-index: 1000000000000000;
+}
+
+/* line 84, layout/_header.scss */
+ul.dropdown {
+  margin-top: .5em;
+  background: #4d4c72;
+  color: white;
+  font-size: 12px;
+  min-width: 50px;
+  border-radius: 0 0 5px 5px;
+}
+/* line 91, layout/_header.scss */
+ul.dropdown li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+/* line 99, layout/_header.scss */
 .alert {
   background-color: #7477bf;
   display: block;
@@ -543,14 +606,14 @@ header {
   padding: 10px;
 }
 
-/* line 75, layout/_header.scss */
+/* line 107, layout/_header.scss */
 .exit {
   cursor: pointer;
   float: right;
 }
 
 @media (min-width: 768px) {
-  /* line 80, layout/_header.scss */
+  /* line 112, layout/_header.scss */
   .top-section {
     display: flex;
     flex-direction: row;
@@ -558,12 +621,12 @@ header {
   }
 }
 
-/* line 88, layout/_header.scss */
+/* line 120, layout/_header.scss */
 .search {
   justify-content: flex-end;
 }
 @media (min-width: 768px) {
-  /* line 88, layout/_header.scss */
+  /* line 120, layout/_header.scss */
   .search {
     flex-grow: 2;
     border-bottom: 1px solid #dfdfdf;
@@ -572,13 +635,13 @@ header {
   }
 }
 
-/* line 100, layout/_header.scss */
+/* line 132, layout/_header.scss */
 .dashboard-title {
   text-align: center;
   margin: 25px;
 }
 @media (min-width: 768px) {
-  /* line 100, layout/_header.scss */
+  /* line 132, layout/_header.scss */
   .dashboard-title {
     display: flex;
     flex-direction: row;
@@ -586,7 +649,7 @@ header {
   }
 }
 
-/* line 111, layout/_header.scss */
+/* line 143, layout/_header.scss */
 .search {
   flex-grow: 2;
   border-bottom: 1px solid #dfdfdf;
@@ -594,7 +657,7 @@ header {
   background: #fbfbfb;
 }
 
-/* line 118, layout/_header.scss */
+/* line 150, layout/_header.scss */
 #search_input {
   padding: 12px 2px;
   margin: 12px 50px;
@@ -603,13 +666,13 @@ header {
   width: 90%;
 }
 @media (min-width: 768px) {
-  /* line 118, layout/_header.scss */
+  /* line 150, layout/_header.scss */
   #search_input {
     width: 33%;
   }
 }
 
-/* line 131, layout/_header.scss */
+/* line 163, layout/_header.scss */
 .fa {
   position: relative;
   align-self: center;
@@ -618,65 +681,143 @@ header {
 }
 
 /* ---- Navigation ---- */
-/* line 144, layout/_header.scss */
+@media (min-width: 768px) {
+  /* line 172, layout/_header.scss */
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* line 182, layout/_header.scss */
 .nav {
-  justify-content: space-between;
   background-color: #4d4c72;
   list-style: none;
 }
-/* line 151, layout/_header.scss */
-.nav li {
-  padding: 10px;
-  position: relative;
+/* line 186, layout/_header.scss */
+.nav a {
+  color: white;
+  text-decoration: none;
 }
-@media (min-width: 768px) {
-  /* line 151, layout/_header.scss */
-  .nav li {
-    padding: 30px;
-  }
-}
-/* line 160, layout/_header.scss */
-.nav li#menu-page-selected:after {
-  content: " ";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: -101%;
-  border-right: solid 3px #85db80;
-}
-/* line 172, layout/_header.scss */
+/* line 191, layout/_header.scss */
 .nav img {
-  width: 20px;
-  height: 20px;
+  display: none;
+}
+/* line 195, layout/_header.scss */
+.nav li {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 172, layout/_header.scss */
+  /* line 182, layout/_header.scss */
+  .nav {
+    justify-content: space-between;
+  }
+  /* line 205, layout/_header.scss */
+  .nav li {
+    position: relative;
+    padding: 30px;
+    border: none;
+  }
+  /* line 211, layout/_header.scss */
+  .nav li#menu-page-selected:after {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -101%;
+    border-right: solid 5px #85db80;
+    border-radius: 5px;
+  }
+  /* line 223, layout/_header.scss */
   .nav img {
+    display: block;
     width: 30px;
     height: 30px;
   }
-}
-/* line 183, layout/_header.scss */
-.nav ul {
-  overflow: hidden;
+  /* line 229, layout/_header.scss */
+  .nav ul {
+    overflow: hidden;
+  }
 }
 
-/* line 189, layout/_header.scss */
+/* line 235, layout/_header.scss */
 .sr-only {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 235, layout/_header.scss */
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
 }
 
-/* line 198, layout/_header.scss */
+/* line 249, layout/_header.scss */
 img {
   width: 30px;
   height: 30px;
+}
+
+/* line 254, layout/_header.scss */
+.menu-btn {
+  margin: 3px 3px 3px 5px;
+}
+@media (min-width: 768px) {
+  /* line 254, layout/_header.scss */
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* line 261, layout/_header.scss */
+.menu-btn div {
+  padding-right: 8px;
+  margin-top: 1em;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 200;
+  align-self: center;
+  z-index: 99;
+}
+
+/* line 271, layout/_header.scss */
+.menu-btn span {
+  display: block;
+  width: 19px;
+  height: 3px;
+  margin: 4px 0;
+  background: white;
+  z-index: 99;
+}
+
+/* line 280, layout/_header.scss */
+.nav {
+  display: none;
+}
+
+/* line 284, layout/_header.scss */
+.expand {
+  display: block !important;
+}
+
+/* line 288, layout/_header.scss */
+.mobile-nav {
+  display: flex;
+}
+
+/* line 292, layout/_header.scss */
+.menu-wrap {
+  display: flex;
+  flex-direction: row;
 }
 
 /*main container settings*/
@@ -695,33 +836,6 @@ img {
   .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
     flex: 1 49%;
   }
-}
-
-/* line 1, layout/_extends.scss */
-.nav, .flex-mobile-box, .social-wrapper, .new-members, .recent-activity, .flex-list {
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 6, layout/_extends.scss */
-.search, .flex, .main-content, .main-header, .name-group, .traffic-nav-flex, .member-list, .member-float, .social-section, .social-icon-wrapper, .inner-settings {
-  display: flex;
-  flex-direction: row;
-}
-
-/* line 11, layout/_extends.scss */
-.main-header, .name-group, .traffic-nav-flex, .member-list, .member-float {
-  justify-content: space-between;
-}
-
-/* line 16, layout/_extends.scss */
-.alert, #search_input, .nav li#menu-page-selected:after {
-  border-radius: 5px;
-}
-
-/* line 20, layout/_extends.scss */
-.mobile-traffic, .daily-traffic, .social, .new-members, .recent-activity, .member-list:not(:last-child) {
-  border-bottom: solid 1px #dfdfdf;
 }
 
 /* line 1, layout/_graphs.scss */
@@ -1162,109 +1276,106 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 30, components/_typography.scss */
-.alert,
-.new-alert {
+/* line 29, components/_typography.scss */
+.alert {
   color: white;
   font-size: 12px;
 }
+@media (min-width: 768px) {
+  /* line 29, components/_typography.scss */
+  .alert {
+    font-size: 15px;
+  }
+}
 
-/* line 35, components/_typography.scss */
+/* line 38, components/_typography.scss */
 .exit, .new-exit {
   font-weight: 700;
 }
 
-/* line 39, components/_typography.scss */
+/* line 42, components/_typography.scss */
 #search_input {
   font-size: 12px;
 }
 
 /*Graphs*/
-/* line 45, components/_typography.scss */
+/* line 48, components/_typography.scss */
 .traffic-nav li a {
   text-decoration: none;
   color: #b6b6b6;
 }
 
-/* line 50, components/_typography.scss */
+/* line 53, components/_typography.scss */
 #selected {
   color: white;
 }
 
 /*Social*/
-/* line 56, components/_typography.scss */
+/* line 59, components/_typography.scss */
 .social-number {
   font-size: 20px;
   font-weight: 300;
 }
+@media (min-width: 1024px) {
+  /* line 59, components/_typography.scss */
+  .social-number {
+    font-size: 35px;
+  }
+}
 
-/* line 61, components/_typography.scss */
+/* line 68, components/_typography.scss */
 h4 {
   color: #7477bf;
 }
 
 /*Members*/
-/* line 67, components/_typography.scss */
+/* line 74, components/_typography.scss */
 .new-members, .recent-activity {
   font-size: 12px;
 }
 
-/* line 71, components/_typography.scss */
+/* line 78, components/_typography.scss */
 .member-list a {
   text-decoration: none;
   color: #7477bf;
   font-size: 12px;
 }
 
-/* line 77, components/_typography.scss */
+/* line 84, components/_typography.scss */
 .when {
   font-size: 12px;
 }
 
 /*Forms*/
-/* line 83, components/_typography.scss */
+/* line 90, components/_typography.scss */
 .message-user {
   font-size: 12px;
 }
 
-/* line 87, components/_typography.scss */
+/* line 94, components/_typography.scss */
 #search_user, .user-message {
   font-size: 12px;
 }
 
-/* line 92, components/_typography.scss */
+/* line 99, components/_typography.scss */
 button {
   font-size: 12px;
   color: white;
   text-transform: uppercase;
 }
 
-/* line 98, components/_typography.scss */
+/* line 105, components/_typography.scss */
 .settings {
-  font-size: 17px;
-}
-
-/* line 102, components/_typography.scss */
-#timezone {
   font-size: 12px;
 }
-
 @media (min-width: 768px) {
-  /* line 109, components/_typography.scss */
-  .alert,
-  .new-alert {
+  /* line 105, components/_typography.scss */
+  .settings {
     font-size: 15px;
   }
-
-  /* line 113, components/_typography.scss */
-  #search_input {
-    font-size: 12px;
-  }
 }
-@media (min-width: 1024px) {
-  /* line 120, components/_typography.scss */
-  .social-number {
-    font-size: 35px;
-    font-weight: 300;
-  }
+
+/* line 113, components/_typography.scss */
+#timezone {
+  font-size: 12px;
 }
