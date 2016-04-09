@@ -63,3 +63,17 @@ $("#cancel").click( function() {
 })
 
 loadSettings();
+
+//Completing search
+
+$(function() {
+    var availableTags = [
+      "Victoria Chambers",
+      "Dale Byrd",
+      "Dawn Wood",
+      "Dan Oliver"
+    ];
+    $( "#search_user" ).autocomplete({
+      source: availableTags
+    });
+  });

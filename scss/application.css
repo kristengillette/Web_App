@@ -950,21 +950,22 @@ canvas {
 /* line 13, layout/_social.scss */
 .social-section {
   justify-content: space-around;
+  flex: 1 30%;
 }
 
-/* line 18, layout/_social.scss */
+/* line 19, layout/_social.scss */
 .social-text {
   align-self: center;
   margin-right: 67px;
 }
 
-/* line 22, layout/_social.scss */
+/* line 23, layout/_social.scss */
 .social {
   margin: 0px auto;
   padding: 10px 20px 40px;
 }
 
-/* line 29, layout/_social.scss */
+/* line 30, layout/_social.scss */
 .social-section {
   background-color: #fbfbfb;
   border: 1px solid #d1d1d1;
@@ -972,7 +973,7 @@ canvas {
   margin: 5px;
 }
 
-/* line 36, layout/_social.scss */
+/* line 37, layout/_social.scss */
 .social-icon {
   width: 30px;
   height: 30px;
@@ -981,14 +982,14 @@ canvas {
   padding-top: 7px;
 }
 @media (min-width: 1024px) {
-  /* line 36, layout/_social.scss */
+  /* line 37, layout/_social.scss */
   .social-icon {
     width: 50px;
     height: 50px;
   }
 }
 
-/* line 49, layout/_social.scss */
+/* line 50, layout/_social.scss */
 .social-icon-wrapper {
   background: #7477bf;
   border-radius: 50%;
@@ -998,7 +999,7 @@ canvas {
   margin: 10px;
 }
 @media (min-width: 1024px) {
-  /* line 49, layout/_social.scss */
+  /* line 50, layout/_social.scss */
   .social-icon-wrapper {
     width: 70px;
     height: 70px;
@@ -1006,22 +1007,22 @@ canvas {
   }
 }
 
-/* line 65, layout/_social.scss */
+/* line 66, layout/_social.scss */
 .social-inner {
   fill: white;
 }
 
-/* line 70, layout/_social.scss */
+/* line 71, layout/_social.scss */
 .social-text {
   text-align: center;
 }
 
-/* line 74, layout/_social.scss */
+/* line 75, layout/_social.scss */
 .social-number {
   margin: 0;
 }
 
-/* line 78, layout/_social.scss */
+/* line 79, layout/_social.scss */
 h4 {
   margin: 0;
 }
