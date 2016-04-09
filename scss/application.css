@@ -1080,8 +1080,15 @@ button {
   font-weight: bold;
   box-sizing: border-box;
 }
+@media (min-width: 768px) {
+  /* line 94, layout/_forms.scss */
+  .onoffswitch-inner:before, .onoffswitch-inner:after {
+    font-size: 14px;
+    height: 30px;
+  }
+}
 
-/* line 99, layout/_forms.scss */
+/* line 104, layout/_forms.scss */
 .onoffswitch-inner:before {
   content: "ON";
   padding-left: 10px;
@@ -1089,7 +1096,7 @@ button {
   color: white;
 }
 
-/* line 105, layout/_forms.scss */
+/* line 110, layout/_forms.scss */
 .onoffswitch-inner:after {
   content: "OFF";
   padding-right: 10px;
@@ -1098,7 +1105,7 @@ button {
   text-align: right;
 }
 
-/* line 111, layout/_forms.scss */
+/* line 116, layout/_forms.scss */
 .onoffswitch-switch {
   display: block;
   width: 18px;
@@ -1113,12 +1120,12 @@ button {
   transition: all 0.3s ease-in 0s;
 }
 
-/* line 119, layout/_forms.scss */
+/* line 124, layout/_forms.scss */
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
   margin-left: 0;
 }
 
-/* line 122, layout/_forms.scss */
+/* line 127, layout/_forms.scss */
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
 }
