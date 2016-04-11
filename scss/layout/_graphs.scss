@@ -37,6 +37,14 @@ canvas {
   padding: 10px 20px;
 }
 
+.daily-traffic, .mobile-traffic {
+	width: 80%;
+
+	@media #{$brk-narrow} {
+		width: 50%;
+	}
+}
+
 .flex-mobile-box {
 	@extend %flex-column;
 	justify-content: flex-start;
