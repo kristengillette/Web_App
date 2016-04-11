@@ -279,6 +279,10 @@ img {
  
 .nav{
  display: none;
+
+ @media #{$brk-narrow} {
+ 	display: flex;
+ }
 }
  
 .expand {

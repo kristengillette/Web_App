@@ -1,0 +1,54 @@
+/*New Members*/
+
+.new-members, .recent-activity {
+  margin: 0px auto;
+  padding: 10px 20px;
+  @extend %bottom-border;
+  @extend %flex-column;
+  justify-content: space-around;
+}
+
+.member-list, .member-float {
+	@extend %flex-spaced-between;
+}
+
+.member-list:not(:last-child) {
+	  @extend %bottom-border;
+}
+
+.member-list {
+		a {
+			display: block;
+			align-self: center;
+		}
+		p {
+			align-self: center
+		}
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			display: inline;
+			margin: 5px;
+			align-self: center;
+		}
+}
+
+.when {
+	display: block;
+	align-self: center;
+}
+
+.flex-list {
+	@extend %flex-column;
+	justify-content: space-between;
+}
+
+
+.new-members, .message-user {
+	@media #{$brk-narrow} {
+	border-right: solid 1px $light-gray;
+}
+}
+
+

@@ -1,0 +1,143 @@
+/*Message Users*/
+
+.message-user {
+  margin: 0px auto;
+  padding: 10px 20px;
+}
+.user-search {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#search_user, .user-message {
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 12px auto;
+	border: 2px solid $light-gray;
+	width: 90%;
+	background-color: $almost-white;
+}
+
+.user-message {
+	min-height: 100px;
+}
+
+.ui-autocomplete {
+    z-index: 100;
+    font-size: $small-font;
+
+    li {
+        padding-top: 10px;
+    }
+}
+
+
+button {
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 12px auto;
+	background-color: $light-purple;
+	border: none;
+}
+
+#send {
+	width: 90%;
+}
+
+/*Settings*/
+
+.settings {
+	margin: 0px auto;
+  	padding: 10px 20px;
+}
+
+.inner-settings {
+	@extend %flex-row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.settings-text {
+	margin-right: 20px;
+}
+
+.settings-buttons {
+	text-align: center;
+}
+
+#timezone {
+	width: 90%;
+	padding: 12px 2px;
+	border-radius: 5px;
+	margin: 20px auto;
+	border: 2px solid $light-gray;
+}
+
+
+#save, #cancel {
+	width: 45%;
+	margin-top: 30px;
+}
+
+#cancel {
+	background-color: $medium-gray;
+}
+
+/*Switches*/
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+
+    @media #{$brk-narrow} {
+    	font-size: 14px;
+    	height: 30px;
+    }
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: $light-purple;
+    color: $white;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: $white;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.icon-credit {
+    font-size: 10px;
+    margin: 10px;
+}
