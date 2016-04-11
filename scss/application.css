@@ -1134,13 +1134,17 @@ h4 {
 .ui-autocomplete {
   z-index: 100;
   font-size: 12px;
+  border: 1px solid #b6b6b6;
+  border-top: none;
+  width: 30%;
+  background: #fff;
 }
-/* line 29, layout/_forms.scss */
+/* line 31, layout/_forms.scss */
 .ui-autocomplete li {
   padding-top: 10px;
 }
 
-/* line 35, layout/_forms.scss */
+/* line 40, layout/_forms.scss */
 button {
   padding: 12px 2px;
   border-radius: 5px;
@@ -1149,35 +1153,35 @@ button {
   border: none;
 }
 
-/* line 43, layout/_forms.scss */
+/* line 48, layout/_forms.scss */
 #send {
   width: 90%;
 }
 
 /*Settings*/
-/* line 49, layout/_forms.scss */
+/* line 54, layout/_forms.scss */
 .settings {
   margin: 0px auto;
   padding: 10px 20px;
 }
 
-/* line 54, layout/_forms.scss */
+/* line 59, layout/_forms.scss */
 .inner-settings {
   justify-content: flex-start;
   align-items: center;
 }
 
-/* line 60, layout/_forms.scss */
+/* line 65, layout/_forms.scss */
 .settings-text {
   margin-right: 20px;
 }
 
-/* line 64, layout/_forms.scss */
+/* line 69, layout/_forms.scss */
 .settings-buttons {
   text-align: center;
 }
 
-/* line 68, layout/_forms.scss */
+/* line 73, layout/_forms.scss */
 #timezone {
   width: 90%;
   padding: 12px 2px;
@@ -1186,19 +1190,19 @@ button {
   border: 2px solid #dfdfdf;
 }
 
-/* line 77, layout/_forms.scss */
+/* line 82, layout/_forms.scss */
 #save, #cancel {
   width: 45%;
   margin-top: 30px;
 }
 
-/* line 82, layout/_forms.scss */
+/* line 87, layout/_forms.scss */
 #cancel {
   background-color: #b6b6b6;
 }
 
 /*Switches*/
-/* line 88, layout/_forms.scss */
+/* line 93, layout/_forms.scss */
 .onoffswitch {
   position: relative;
   width: 90px;
@@ -1207,12 +1211,12 @@ button {
   -ms-user-select: none;
 }
 
-/* line 92, layout/_forms.scss */
+/* line 97, layout/_forms.scss */
 .onoffswitch-checkbox {
   display: none;
 }
 
-/* line 95, layout/_forms.scss */
+/* line 100, layout/_forms.scss */
 .onoffswitch-label {
   display: block;
   overflow: hidden;
@@ -1221,7 +1225,7 @@ button {
   border-radius: 20px;
 }
 
-/* line 99, layout/_forms.scss */
+/* line 104, layout/_forms.scss */
 .onoffswitch-inner {
   display: block;
   width: 200%;
@@ -1229,7 +1233,7 @@ button {
   transition: margin 0.3s ease-in 0s;
 }
 
-/* line 103, layout/_forms.scss */
+/* line 108, layout/_forms.scss */
 .onoffswitch-inner:before, .onoffswitch-inner:after {
   display: block;
   float: left;
@@ -1244,14 +1248,14 @@ button {
   box-sizing: border-box;
 }
 @media (min-width: 768px) {
-  /* line 103, layout/_forms.scss */
+  /* line 108, layout/_forms.scss */
   .onoffswitch-inner:before, .onoffswitch-inner:after {
     font-size: 14px;
     height: 30px;
   }
 }
 
-/* line 113, layout/_forms.scss */
+/* line 118, layout/_forms.scss */
 .onoffswitch-inner:before {
   content: "ON";
   padding-left: 10px;
@@ -1259,7 +1263,7 @@ button {
   color: white;
 }
 
-/* line 119, layout/_forms.scss */
+/* line 124, layout/_forms.scss */
 .onoffswitch-inner:after {
   content: "OFF";
   padding-right: 10px;
@@ -1268,7 +1272,7 @@ button {
   text-align: right;
 }
 
-/* line 125, layout/_forms.scss */
+/* line 130, layout/_forms.scss */
 .onoffswitch-switch {
   display: block;
   width: 18px;
@@ -1283,17 +1287,17 @@ button {
   transition: all 0.3s ease-in 0s;
 }
 
-/* line 133, layout/_forms.scss */
+/* line 138, layout/_forms.scss */
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
   margin-left: 0;
 }
 
-/* line 136, layout/_forms.scss */
+/* line 141, layout/_forms.scss */
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
 }
 
-/* line 140, layout/_forms.scss */
+/* line 145, layout/_forms.scss */
 .icon-credit {
   font-size: 10px;
   margin: 10px;

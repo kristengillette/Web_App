@@ -25,10 +25,15 @@
 .ui-autocomplete {
     z-index: 100;
     font-size: $small-font;
+    border: 1px solid $medium-gray;
+    border-top: none;
 
     li {
         padding-top: 10px;
     }
+
+    width: 30%;
+    background: #fff;
 }
 
 
