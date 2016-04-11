@@ -13,7 +13,11 @@
 .social-section {
 	@extend %flex-row;
 	justify-content: space-around;
-	flex: 1 30%
+	flex: 1 1 auto;
+	width: 100%;
+	@media #{$brk-narrow} {
+	width: 30%;
+}
 }
 
 .social-text {

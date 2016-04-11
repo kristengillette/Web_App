@@ -1,17 +1,23 @@
 /*main container settings*/
 
+.wrap {
+	width: 100%;
+}
+
 .main-content {
 	@extend %flex-row;
 	flex-wrap: wrap; 
 }
 
-.traffic, .daily-traffic, .mobile-traffic, .alert, .new-alert, .search, .dashboard, .social, .new-members, .recent-activity, .settings, .message-user {
+
+.traffic, .daily-traffic, .mobile-traffic, .alert, .search, .dashboard, .social, .new-members, .recent-activity, .settings, .message-user {
 	flex: 1 1 100%;
 }
 
 .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
   	@media #{$brk-narrow} {
-  	flex: 1 1 49%; 
+  	flex: 1 1 auto; 
+  	width: 49%
   }
 }
 

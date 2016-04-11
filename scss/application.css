@@ -632,16 +632,17 @@ ul.dropdown li {
     border-bottom: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf;
     background: #fbfbfb;
+    width: 49%;
   }
 }
 
-/* line 132, layout/_header.scss */
+/* line 133, layout/_header.scss */
 .dashboard-title {
   text-align: center;
   margin: 25px;
 }
 @media (min-width: 768px) {
-  /* line 132, layout/_header.scss */
+  /* line 133, layout/_header.scss */
   .dashboard-title {
     display: flex;
     flex-direction: row;
@@ -649,14 +650,14 @@ ul.dropdown li {
   }
 }
 
-/* line 143, layout/_header.scss */
+/* line 144, layout/_header.scss */
 .search {
   border-bottom: 1px solid #dfdfdf;
   border-left: 1px solid #dfdfdf;
   background: #fbfbfb;
 }
 
-/* line 150, layout/_header.scss */
+/* line 151, layout/_header.scss */
 #search_input {
   padding: 12px 2px;
   margin: 12px 50px;
@@ -665,13 +666,13 @@ ul.dropdown li {
   width: 90%;
 }
 @media (min-width: 768px) {
-  /* line 150, layout/_header.scss */
+  /* line 151, layout/_header.scss */
   #search_input {
     width: 33%;
   }
 }
 
-/* line 163, layout/_header.scss */
+/* line 164, layout/_header.scss */
 .fa {
   position: relative;
   align-self: center;
@@ -681,28 +682,28 @@ ul.dropdown li {
 
 /* ---- Navigation ---- */
 @media (min-width: 768px) {
-  /* line 172, layout/_header.scss */
+  /* line 173, layout/_header.scss */
   .flex {
     display: flex;
     flex-direction: row;
   }
 }
 
-/* line 182, layout/_header.scss */
+/* line 183, layout/_header.scss */
 .nav {
   background-color: #4d4c72;
   list-style: none;
 }
-/* line 186, layout/_header.scss */
+/* line 187, layout/_header.scss */
 .nav a {
   color: white;
   text-decoration: none;
 }
-/* line 191, layout/_header.scss */
+/* line 192, layout/_header.scss */
 .nav img {
   display: none;
 }
-/* line 195, layout/_header.scss */
+/* line 196, layout/_header.scss */
 .nav li {
   padding: 20px;
   text-align: center;
@@ -710,17 +711,17 @@ ul.dropdown li {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 182, layout/_header.scss */
+  /* line 183, layout/_header.scss */
   .nav {
     justify-content: space-between;
   }
-  /* line 205, layout/_header.scss */
+  /* line 206, layout/_header.scss */
   .nav li {
     position: relative;
     padding: 30px;
     border: none;
   }
-  /* line 211, layout/_header.scss */
+  /* line 212, layout/_header.scss */
   .nav li#menu-page-selected:after {
     content: " ";
     display: block;
@@ -732,24 +733,24 @@ ul.dropdown li {
     border-right: solid 5px #85db80;
     border-radius: 5px;
   }
-  /* line 223, layout/_header.scss */
+  /* line 224, layout/_header.scss */
   .nav img {
     display: block;
     width: 30px;
     height: 30px;
   }
-  /* line 229, layout/_header.scss */
+  /* line 230, layout/_header.scss */
   .nav ul {
     overflow: hidden;
   }
 }
 
-/* line 235, layout/_header.scss */
+/* line 236, layout/_header.scss */
 .mobile-menu {
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 235, layout/_header.scss */
+  /* line 236, layout/_header.scss */
   .mobile-menu {
     position: absolute;
     left: -10000px;
@@ -760,24 +761,24 @@ ul.dropdown li {
   }
 }
 
-/* line 249, layout/_header.scss */
+/* line 250, layout/_header.scss */
 img {
   width: 30px;
   height: 30px;
 }
 
-/* line 254, layout/_header.scss */
+/* line 255, layout/_header.scss */
 .menu-btn {
   margin: 3px 3px 3px 5px;
 }
 @media (min-width: 768px) {
-  /* line 254, layout/_header.scss */
+  /* line 255, layout/_header.scss */
   .menu-btn {
     display: none;
   }
 }
 
-/* line 261, layout/_header.scss */
+/* line 262, layout/_header.scss */
 .menu-btn div {
   padding-right: 8px;
   margin-top: 1em;
@@ -788,7 +789,7 @@ img {
   z-index: 99;
 }
 
-/* line 271, layout/_header.scss */
+/* line 272, layout/_header.scss */
 .menu-btn span {
   display: block;
   width: 19px;
@@ -798,28 +799,28 @@ img {
   z-index: 99;
 }
 
-/* line 280, layout/_header.scss */
+/* line 281, layout/_header.scss */
 .nav {
   display: none;
 }
 @media (min-width: 768px) {
-  /* line 280, layout/_header.scss */
+  /* line 281, layout/_header.scss */
   .nav {
     display: flex;
   }
 }
 
-/* line 288, layout/_header.scss */
+/* line 289, layout/_header.scss */
 .expand {
   display: block !important;
 }
 
-/* line 292, layout/_header.scss */
+/* line 293, layout/_header.scss */
 .mobile-nav {
   display: flex;
 }
 
-/* line 296, layout/_header.scss */
+/* line 297, layout/_header.scss */
 .menu-wrap {
   display: flex;
   flex-direction: row;
@@ -827,19 +828,25 @@ img {
 
 /*main container settings*/
 /* line 3, layout/_containers.scss */
+.wrap {
+  width: 100%;
+}
+
+/* line 7, layout/_containers.scss */
 .main-content {
   flex-wrap: wrap;
 }
 
-/* line 8, layout/_containers.scss */
-.traffic, .daily-traffic, .mobile-traffic, .alert, .new-alert, .search, .dashboard, .social, .new-members, .recent-activity, .settings, .message-user {
+/* line 13, layout/_containers.scss */
+.traffic, .daily-traffic, .mobile-traffic, .alert, .search, .dashboard, .social, .new-members, .recent-activity, .settings, .message-user {
   flex: 1 1 100%;
 }
 
 @media (min-width: 768px) {
-  /* line 12, layout/_containers.scss */
+  /* line 17, layout/_containers.scss */
   .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
-    flex: 1 1 49%;
+    flex: 1 1 auto;
+    width: 49%;
   }
 }
 
@@ -889,33 +896,44 @@ canvas {
 }
 
 /* line 40, layout/_graphs.scss */
+.daily-traffic, .mobile-traffic {
+  width: 80%;
+}
+@media (min-width: 768px) {
+  /* line 40, layout/_graphs.scss */
+  .daily-traffic, .mobile-traffic {
+    width: 50%;
+  }
+}
+
+/* line 48, layout/_graphs.scss */
 .flex-mobile-box {
   justify-content: flex-start;
 }
 @media (min-width: 1024px) {
-  /* line 40, layout/_graphs.scss */
+  /* line 48, layout/_graphs.scss */
   .flex-mobile-box {
     flex-direction: row;
   }
 }
 
-/* line 50, layout/_graphs.scss */
+/* line 58, layout/_graphs.scss */
 #legend {
   margin-left: -100px;
   align-self: center;
 }
 
-/* line 55, layout/_graphs.scss */
+/* line 63, layout/_graphs.scss */
 .doughnut-legend {
   list-style: none;
   position: relative;
   display: inline-block;
 }
-/* line 60, layout/_graphs.scss */
+/* line 68, layout/_graphs.scss */
 .doughnut-legend li {
   margin: 2px;
 }
-/* line 62, layout/_graphs.scss */
+/* line 70, layout/_graphs.scss */
 .doughnut-legend li span {
   width: 1em;
   height: 1em;
@@ -925,14 +943,14 @@ canvas {
 }
 
 @media (min-width: 768px) {
-  /* line 72, layout/_graphs.scss */
+  /* line 80, layout/_graphs.scss */
   .mobile-traffic, .daily-traffic {
     border-top: solid 1px #dfdfdf;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 80, layout/_graphs.scss */
+  /* line 88, layout/_graphs.scss */
   .daily-traffic {
     border-right: solid 1px #dfdfdf;
   }
@@ -955,22 +973,29 @@ canvas {
 /* line 13, layout/_social.scss */
 .social-section {
   justify-content: space-around;
-  flex: 1 30%;
+  flex: 1 1 auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 13, layout/_social.scss */
+  .social-section {
+    width: 30%;
+  }
 }
 
-/* line 19, layout/_social.scss */
+/* line 23, layout/_social.scss */
 .social-text {
   align-self: center;
   margin-right: 67px;
 }
 
-/* line 23, layout/_social.scss */
+/* line 27, layout/_social.scss */
 .social {
   margin: 0px auto;
   padding: 10px 20px 40px;
 }
 
-/* line 30, layout/_social.scss */
+/* line 34, layout/_social.scss */
 .social-section {
   background-color: #fbfbfb;
   border: 1px solid #d1d1d1;
@@ -978,7 +1003,7 @@ canvas {
   margin: 5px;
 }
 
-/* line 37, layout/_social.scss */
+/* line 41, layout/_social.scss */
 .social-icon {
   width: 30px;
   height: 30px;
@@ -987,14 +1012,14 @@ canvas {
   padding-top: 7px;
 }
 @media (min-width: 1024px) {
-  /* line 37, layout/_social.scss */
+  /* line 41, layout/_social.scss */
   .social-icon {
     width: 50px;
     height: 50px;
   }
 }
 
-/* line 50, layout/_social.scss */
+/* line 54, layout/_social.scss */
 .social-icon-wrapper {
   background: #7477bf;
   border-radius: 50%;
@@ -1004,7 +1029,7 @@ canvas {
   margin: 10px;
 }
 @media (min-width: 1024px) {
-  /* line 50, layout/_social.scss */
+  /* line 54, layout/_social.scss */
   .social-icon-wrapper {
     width: 70px;
     height: 70px;
@@ -1012,22 +1037,22 @@ canvas {
   }
 }
 
-/* line 66, layout/_social.scss */
+/* line 70, layout/_social.scss */
 .social-inner {
   fill: white;
 }
 
-/* line 71, layout/_social.scss */
+/* line 75, layout/_social.scss */
 .social-text {
   text-align: center;
 }
 
-/* line 75, layout/_social.scss */
+/* line 79, layout/_social.scss */
 .social-number {
   margin: 0;
 }
 
-/* line 79, layout/_social.scss */
+/* line 83, layout/_social.scss */
 h4 {
   margin: 0;
 }
