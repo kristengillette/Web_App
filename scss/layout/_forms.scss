@@ -31,6 +31,10 @@
 	color: $medium-gray;
 }
 
+.ui-helper-hidden-accessible {
+	display: none;
+}
+
 button {
 	padding: 12px 2px;
 	border-radius: 5px;
