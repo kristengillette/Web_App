@@ -72,6 +72,7 @@ $(function() {
       "Dan Oliver"
     ];
     $( "#search_user" ).autocomplete({
-      source: availableTags
+      source: availableTags,
     });
   });
+

@@ -23,19 +23,13 @@
 }
 
 .ui-autocomplete {
-    z-index: 100;
     font-size: $small-font;
-    border: 1px solid $medium-gray;
-    border-top: none;
-
-    li {
-        padding-top: 10px;
-    }
-
-    width: 30%;
-    background: #fff;
 }
 
+.ui-widget input, .ui-autocomplete-input {
+	font-family: $font-family;
+	color: $medium-gray;
+}
 
 button {
 	padding: 12px 2px;
