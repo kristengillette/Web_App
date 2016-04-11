@@ -1,14 +1,12 @@
-// Hamburger Nav
-
 $( '.menu-btn' ).click(function(){
-    	     $('.nav').toggleClass('expand')
-    	     })
+    	     $('.nav').toggleClass('expand');
+    	     });
 
 //Navigation Highlight//
 $(".nav li").click(function(){
     $(".nav li").removeAttr('id', 'menu-page-selected');
     $(this).attr('id', 'menu-page-selected');
-})
+});
 
 $("#send").click(function(){
  if (!$(".user-message").val()) {
@@ -26,10 +24,10 @@ else {
 function loadSettings() {
 	if (localStorage.email == "unchecked") {
     $('#onoffemail').prop('checked', false);
-};
+}
 	if (localStorage.profile == "unchecked") {
     $('#onoffprofile').prop('checked', false);
-};
+}
     $('#timezone').val(localStorage.timezone);
 }
 
@@ -60,7 +58,7 @@ $("#cancel").click( function() {
 	localStorage.timezone = 0;
 	localStorage.profile = "checked";
 	localStorage.email = "checked";
-})
+});
 
 loadSettings();
 
