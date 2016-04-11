@@ -15,7 +15,7 @@
 
 .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
   	@media #{$brk-narrow} {
-  	flex: 1 1 auto; 
+  	flex: auto; 
   	width: 49%
   }
 }
