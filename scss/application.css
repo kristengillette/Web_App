@@ -845,7 +845,7 @@ img {
 @media (min-width: 768px) {
   /* line 17, layout/_containers.scss */
   .daily-traffic, .mobile-traffic, .new-members, .settings, .message-user, .recent-activity, .search, .dashboard {
-    flex: 1 1 auto;
+    flex: auto;
     width: 49%;
   }
 }
@@ -973,7 +973,7 @@ canvas {
 /* line 13, layout/_social.scss */
 .social-section {
   justify-content: space-around;
-  flex: 1 1 auto;
+  flex: auto;
   width: 100%;
 }
 @media (min-width: 768px) {
